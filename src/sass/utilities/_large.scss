@@ -1,0 +1,299 @@
+@use '../components/colors' as *;
+@media (min-width: 992px) {
+	.hamburger {
+		display: none;
+	}
+
+	.nav {
+		padding: 1.5em 2em;
+
+		&__img {
+			width: 250px;
+		}
+
+		&__info {
+			display: flex;
+			justify-content: space-between;
+			top: 0;
+			left: 0;
+			padding: 1.3em 2em;
+			border-bottom: 1px solid rgba(0, 0, 0, 0.142);
+
+			p {
+				display: inline-block;
+				color: $color-info;
+				font-size: 1.6rem;
+			}
+
+			i {
+				margin-right: 0.2em;
+				color: $main-color;
+				font-size: 1.6rem;
+			}
+
+			span {
+				font-weight: 500;
+				color: $main-color;
+			}
+		}
+
+		&__desktop {
+			display: flex;
+			align-items: center;
+
+			&__list {
+				display: flex;
+			}
+
+			&__item {
+				list-style: none;
+
+				a {
+					position: relative;
+					padding: 0.5em;
+					margin: 0 0.5em;
+					font-size: 1.6rem;
+					letter-spacing: 2px;
+					text-transform: uppercase;
+					text-decoration: none;
+					font-weight: 300;
+					color: $color-item-nav;
+					z-index: 10;
+
+					&::after,
+					&::before,
+					& {
+						transition: transform 0.3s;
+					}
+
+					&:hover {
+						color: $main-color;
+					}
+
+					&::after,
+					&::before {
+						content: '';
+						position: absolute;
+						width: 0;
+						bottom: 0;
+						border-bottom: 2px solid $main-color;
+						transition: 0.3s;
+					}
+
+					&::after {
+						left: 50%;
+					}
+
+					&::before {
+						right: 50%;
+					}
+
+					&:hover::before,
+					&:hover::after {
+						width: 50%;
+					}
+				}
+			}
+		}
+
+		&__reservation {
+			display: block;
+			a {
+				padding: 1em;
+				border: none;
+				border-radius: 25px;
+				background-color: $main-color;
+				color: $color-item;
+				font-weight: 300;
+				letter-spacing: 2px;
+				text-decoration: none;
+			}
+
+			i {
+				margin-right: 0.3em;
+			}
+		}
+
+		&__box {
+			position: absolute;
+			top: 100px;
+			left: 0;
+			right: 0;
+			width: 100%;
+			height: 450px;
+			padding: 2em;
+			justify-content: center;
+			background-color: #f8f8f8;
+			border: 1px solid rgba(0, 0, 0, 0.142);
+
+		
+            &__img{
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                opacity: 0.6;
+                background-position: center;
+                background-size: cover;;
+                z-index: 1;
+
+                &--women {
+                    background-image: url('../img/nav-women.jpg');
+                }
+                
+                &--men {
+                    background-image: url('../img/nav-men.jpg');
+                }
+
+            }
+
+            &__shadow{
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                opacity: 0.6;
+                background-color: rgba(0, 0, 0, 0.904);
+                z-index: 2;
+
+            }
+
+			&__content {
+                position: relative;
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+                text-align: center;
+				margin: 0 4em;
+                opacity: 1;
+                color: dark;
+                color: white;
+                z-index: 100;
+
+				div {
+					align-items: flex-start;
+                    display: flex;
+                    flex-direction: column;
+				}
+
+			}
+
+            
+            &__item{
+                padding: 0.5em;
+                margin: 0.5em 0;
+                text-decoration: none;
+                color: white;
+                transition: color .3s;
+                letter-spacing: 1px;
+
+                &:hover{
+                    color: $main-color-light;
+                }
+
+                i{
+                    color: $main-color-light-2;
+                    font-size: 2rem;
+                    margin-right: 0.3em;
+                }
+            }
+
+			&__title {
+				grid-column: 1/-1;
+                margin-bottom: 1em;
+                border-bottom: 2px solid $main-color-light-2;
+			}
+
+			// &--women{
+			//     display: flex;
+			// }
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.nav {
+		&__img {
+			width: 300px;
+		}
+
+		&__desktop {
+			&__item {
+				a {
+					font-size: 1.8rem;
+				}
+			}
+		}
+
+		&__reservation {
+			a {
+				padding: 1em 1.5em;
+				font-size: 1.6rem;
+			}
+
+			i {
+				margin-right: 0.4em;
+			}
+		}
+	}
+}
+
+@media (min-width: 1400px) {
+	.nav {
+		padding: 1.5em 4em;
+
+		&__info {
+			padding: 1.3em 4em;
+		}
+
+		&__desktop {
+			&__item {
+				a {
+					margin: 0 1em;
+					letter-spacing: 3px;
+				}
+			}
+
+			&__reservation {
+				a {
+					letter-spacing: 3px;
+				}
+
+				i {
+					margin-right: 0.3em;
+				}
+			}
+		}
+
+		&__reservation {
+			a {
+				padding: 1em 2em;
+			}
+		}
+	}
+}
+
+@media (min-width: 1800px) {
+	.nav {
+		&__desktop {
+			&__item {
+				a {
+					font-size: 2.1rem;
+				}
+			}
+
+			&__reservation {
+				i {
+					margin-right: 0.3em;
+				}
+			}
+		}
+
+		&__reservation {
+			a {
+				padding: 1em 3em;
+			}
+		}
+	}
+}
