@@ -49,57 +49,35 @@ men.addEventListener('click', () => {
 
 const navDesktopItemWomen = document.querySelector('.nav__desktop__item--women');
 const navBoxWomen = document.querySelector('.nav__box--women');
-let timeoutIdWomen;
-
-
-navDesktopItemWomen.addEventListener('mouseover', () => {
-  clearTimeout(timeoutIdWomen);
-  navBoxWomen.style.display = 'flex';
-});
-
-navBoxWomen.addEventListener('mouseenter', () => {
-  clearTimeout(timeoutIdWomen);
-});
-
-navBoxWomen.addEventListener('mouseleave', () => {
-  hideNavBoxWomen();
-});
-
-navDesktopItemWomen.addEventListener('mouseout', () => {
-  hideNavBoxWomen();
-});
-
-function hideNavBoxWomen() {
-  timeoutIdWomen = setTimeout(() => {
-    navBoxWomen.style.display = 'none';
-  }, 500);
-}
-
-
+handleNavHover(navDesktopItemWomen, navBoxWomen);
 
 const navDesktopItemMen = document.querySelector('.nav__desktop__item--men');
-const navBoxWoMen = document.querySelector('.nav__box--men');
-let timeoutIdMen;
+const navBoxMen = document.querySelector('.nav__box--men');
+handleNavHover(navDesktopItemMen, navBoxMen);
 
-navDesktopItemMen.addEventListener('mouseover', () => {
-  clearTimeout(timeoutIdMen);
-  navBoxWoMen.style.display = 'flex';
-});
-
-navBoxWoMen.addEventListener('mouseenter', () => {
-  clearTimeout(timeoutIdMen);
-});
-
-navBoxWoMen.addEventListener('mouseleave', () => {
-	hideNavBoxMen();
-});
-
-navDesktopItemMen.addEventListener('mouseout', () => {
-  hideNavBoxMen();
-});
-
-function hideNavBoxMen() {
-	timeoutIdMen = setTimeout(() => {
-    navBoxWoMen.style.display = 'none';
-  }, 400);
-}
+function handleNavHover(navItem, navBox) {
+	let timeoutId;
+  
+	navItem.addEventListener('mouseover', () => {
+	  clearTimeout(timeoutId);
+	  navBox.style.display = 'flex';
+	});
+  
+	navBox.addEventListener('mouseenter', () => {
+	  clearTimeout(timeoutId);
+	});
+  
+	navBox.addEventListener('mouseleave', () => {
+	  hideNavBox();
+	});
+  
+	navItem.addEventListener('mouseout', () => {
+	  hideNavBox();
+	});
+  
+	function hideNavBox() {
+	  timeoutId = setTimeout(() => {
+		navBox.style.display = 'none';
+	  }, 500);
+	}
+  }
