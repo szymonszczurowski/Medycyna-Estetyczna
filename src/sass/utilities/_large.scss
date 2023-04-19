@@ -98,6 +98,7 @@
 
 		&__reservation {
 			display: block;
+
 			a {
 				padding: 1em;
 				border: none;
@@ -107,6 +108,11 @@
 				font-weight: 300;
 				letter-spacing: 2px;
 				text-decoration: none;
+				transition: background-color .3s;
+
+				&:hover{
+					background-color: $main-color-dark2;
+				}
 			}
 
 			i {
@@ -116,7 +122,7 @@
 
 		&__box {
 			position: absolute;
-			top: 100px;
+			top: 90px;
 			left: 0;
 			right: 0;
 			width: 100%;
@@ -124,7 +130,7 @@
 			padding: 2em;
 			justify-content: center;
 			background-color: #f8f8f8;
-			border: 1px solid rgba(0, 0, 0, 0.142);
+			z-index: 10;
 
 		
             &__img{
@@ -133,9 +139,9 @@
                 left: 0;
                 height: 100%;
                 width: 100%;
-                opacity: 0.6;
+                opacity: 1;
                 background-position: center;
-                background-size: cover;;
+                background-size: cover;
                 z-index: 1;
 
                 &--women {
@@ -155,7 +161,7 @@
                 height: 100%;
                 width: 100%;
                 opacity: 0.6;
-                background-color: rgba(0, 0, 0, 0.904);
+                background-color: rgba(0, 0, 0, 0.977);
                 z-index: 2;
 
             }
@@ -210,6 +216,36 @@
 			// }
 		}
 	}
+
+	.header{
+		&__img{
+			background-size: none;
+			&--header-women{
+				background-image: url('../img/header-woman-desktop.jpg');
+			}
+		}
+
+		&__heading{
+			font-size: 5rem;
+		}
+        &__text{
+            font-weight: 400;
+            letter-spacing: 2px;
+            font-size: 2.4rem;
+        }
+
+		&__nav{
+            padding: 1.5em 3em;
+
+            a{
+                transition: color .3s;
+                
+                &:hover{
+                    color: $main-color-light-2;
+                }
+            }
+        }
+    }
 }
 
 @media (min-width: 1200px) {
@@ -224,6 +260,9 @@
 					font-size: 1.8rem;
 				}
 			}
+		}
+		&__box{
+			top: 100px;
 		}
 
 		&__reservation {

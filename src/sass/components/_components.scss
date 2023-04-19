@@ -1,0 +1,41 @@
+@use '../components/colors' as *;
+
+.wrapper {
+    text-align: center;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+
+.wrapper-nav {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 2000px;
+}
+
+.main-title{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    padding-bottom: 0.5em;
+    margin-top: 3em;
+    font-weight: 400;
+    letter-spacing: 2px;
+
+    &::after{
+        position: absolute;
+        content: '';
+        height: 2px;
+        width: 70%;
+        bottom: 0;
+        left: 15%;
+        background-color: $main-color;
+
+    }
+
+}
+
+.section{
+    margin-top: 3em;
+    padding: 0 2em;
+}

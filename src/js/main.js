@@ -9,11 +9,16 @@ const navMobileCloseBtn = document.querySelector('.nav__mobile__button')
 
 hamburgerBtn.addEventListener('click', () => {
     navMobile.classList.toggle('nav__mobile--active')
+    hamburgerBtn.classList.toggle('is-active')
 })
 
 
 navMobileCloseBtn.addEventListener('click', () => {
     navMobile.classList.toggle('nav__mobile--unactive')
+	hamburgerBtn.classList.toggle('is-active')
+    bodyWomen.nextElementSibling.classList.remove('nav__mobile__list--active')
+	bodyFace.nextElementSibling.classList.remove('nav__mobile__list--active')
+	men.nextElementSibling.classList.remove('nav__mobile__list--active')
 
 })
 
@@ -56,28 +61,32 @@ const navBoxMen = document.querySelector('.nav__box--men');
 handleNavHover(navDesktopItemMen, navBoxMen);
 
 function handleNavHover(navItem, navBox) {
-	let timeoutId;
-  
-	navItem.addEventListener('mouseover', () => {
-	  clearTimeout(timeoutId);
-	  navBox.style.display = 'flex';
-	});
-  
-	navBox.addEventListener('mouseenter', () => {
-	  clearTimeout(timeoutId);
-	});
-  
-	navBox.addEventListener('mouseleave', () => {
-	  hideNavBox();
-	});
-  
-	navItem.addEventListener('mouseout', () => {
-	  hideNavBox();
-	});
-  
-	function hideNavBox() {
-	  timeoutId = setTimeout(() => {
-		navBox.style.display = 'none';
-	  }, 500);
-	}
-  }
+    let timeoutId;
+
+    navItem.addEventListener('mouseenter', () => {
+        navBox.classList.add('nav__box--active');
+        clearTimeout(timeoutId);
+        navBox.style.display = 'flex';
+    });
+
+    navItem.addEventListener('mouseleave', () => {
+        navBox.classList.remove('nav__box--active');
+        hideNavBox();
+    });
+
+    navBox.addEventListener('mouseenter', () => {
+        clearTimeout(timeoutId);
+    });
+
+    navBox.addEventListener('mouseleave', () => {
+        navBox.style.display = 'none';
+    });
+
+    function hideNavBox() {
+        timeoutId = setTimeout(() => {
+            if (!navBox.classList.contains('nav__box--active')) {
+                navBox.style.display = 'none';
+            }
+        }, 400);
+    }
+}
