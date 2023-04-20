@@ -1,0 +1,75 @@
+
+.form__group-checkbox input[type='checkbox'] {
+	visibility: hidden;
+	display: none;
+}
+
+.form__group-checkbox .toggle {
+	position: relative;
+	display: block;
+	width: 40px;
+	height: 20px;
+	cursor: pointer;
+	-webkit-tap-highlight-color: transparent;
+	transform: translate3d(0, 0, 0);
+}
+.form__group-checkbox .toggle:before {
+	content: '';
+	position: relative;
+	top: 3px;
+	left: 3px;
+	width: 34px;
+	height: 14px;
+	display: block;
+	background: #9a9999;
+	border-radius: 8px;
+	transition: background 0.2s ease;
+}
+.form__group-checkbox .toggle span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	display: block;
+	background: white;
+	border-radius: 10px;
+	box-shadow: 0 3px 8px rgba(154, 153, 153, 0.5);
+	transition: all 0.2s ease;
+}
+.form__group-checkbox .toggle span:before {
+	content: '';
+	position: absolute;
+	display: block;
+	margin: -18px;
+	width: 56px;
+	height: 56px;
+	border-radius: 50%;
+	transform: scale(0);
+	opacity: 1;
+	pointer-events: none;
+}
+
+.form__group-checkbox #newsletter:checked + .toggle:before {
+	background: rgb(10, 161, 10);
+}
+.form__group-checkbox #newsletter:checked + .toggle span {
+	transform: translateX(20px);
+}
+.form__group-checkbox #newsletter:checked + .toggle span:before {
+	transform: scale(1);
+	opacity: 0;
+	transition: all 0.4s ease;
+}
+
+.form__group-checkbox #privacy-police:checked + .toggle:before {
+	background: rgb(10, 161, 10);
+}
+.form__group-checkbox #privacy-police:checked + .toggle span {
+	transform: translateX(20px);
+}
+.form__group-checkbox #privacy-police:checked + .toggle span:before {
+	transform: scale(1);
+	opacity: 0;
+	transition: all 0.4s ease;
+}

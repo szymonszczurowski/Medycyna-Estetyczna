@@ -42,9 +42,7 @@
       </span>
     </button>
     <div class="nav__mobile">
-      <div class="nav__mobile__button">
-        <i class="fa-solid fa-xmark"></i>
-      </div>
+
       <ul class="nav__mobile__list">
         <li class="nav__mobile__item">
           <a href="#" class="nav__mobile__item">Home</a>
@@ -472,90 +470,96 @@
 
         <section class="contact section">
             <div class="contact__bgimg"></div>
-            <div class="wrapper">
-                <div class="contact__boxes">
-                    <div class="contact__form">
 
-                        <form action="" class="form">
+            <div class="contact__boxes">
 
-                            <h3 class="form__heading">Umów się na wizytę</h3>
+                <form action="" class="form">
 
-                            <div class="form__group">
-                                <label for="name" class="form__group-title">Imię i Nazwisko</label>
-                                <div class="form_controlos">
-                                    <input type="text" id="name">
-                                </div>
-                            </div>
+                    <h3 class="form__heading">Umów się na wizytę</h3>
 
-                            <div class="form__group">
-                                <label for="phone">Telefon</label>
-                                <div class="form_controlos">
-                                    <input type="number" form="phone">
-                                </div>
+                    <div class="form__group">
+                        <label for="name" class="form__group-title">Imię i Nazwisko:</label>
+                        <input type="text" id="name" class="form__group-input">
+                    </div>
 
-                                <label for="email">E-mail</label>
-                                <div class="form_controlos">
-                                    <input type="email" id="email">
-                                </div>
-                            </div>
+                    <div class="form__group form__group--left">
+                        <label for="phone" class="form__group-title">Telefon:</label>
+                        <input type="number" form="phone" class="form__group-input">
+                    </div>
 
-                            <div class="form__group">
-                                <label for="story">Tell us your story:</label>
-                                <div class="form_controlos">
-                                    <textarea id="story" name="story"> </textarea>
-                                </div>
-                            </div>
+                    <div class="form__group  form__group--right">
+                        <label for="email" class="form__group-title">E-mail:</label>
+                        <input type="email" id="email" class="form__group-input">
+                    </div>
 
-                            <div class="form__group">
-                                <div class="form_controlos">
-                                    <input type="checkbox" id="privacy-police">
-                                </div>
-                                <label for="checkbox">Akceptuję Politykę Prywatności</label>
-                            </div>
 
-                            <div class="form__group">
-                                <div class="form_controlos">
-                                    <input type="checkbox" id="newsletter">
-                                </div>
-                                <label for="checkbox">Chcę zapisać się do Newslettera</label>
-                            </div>
-
-                            <div class="form__controls">
-                                <input type="submit" value="Wyślij">
-                            </div>
-                        </form>
-
+                    <div class="form__group">
+                        <label for="story" class="form__group-title">Wiadomość:</label>
+                        <textarea id="story" class="form__group-textarea"> </textarea>
 
                     </div>
 
-                    <div class="contact__info">
-                        <img src="" alt="" class="contact__img">
-                        <p class="contact__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, ab
-                            facilis
-                            similique dolorem vitae provident culpa tempore molestiae ipsam ut.</p>
+                    <div class="form__group form__group--checkbox">
 
-                        <div class="contact__box">
-                            <i class="contact__box-icon"></i>
-                            <div class="contact__box-place">
-                                <h4 class="contact__box-title">Gdańsk,</h4>
-                                <p class="contact__box-text">ul. Grunwaldzka 21/37</p>
-                            </div>
+                        <div class="form__group-checkbox">
+                            <input type="checkbox" id="privacy-police" />
+                            <label for="privacy-police" class="toggle"><span></span></label>
                         </div>
 
-                        <div class="contact__box">
-                            <i class="contact__box-icon"></i>
-                            <div class="contact__box-place">
-                                <h4 class="contact__box-title">123 456 789 / 000 000 000</h4>
-                                <p class="contact__box-text"> Od pon do pt od 8:00 do 18:00</p>
-                            </div>
+                        <label for="privacy-police" class="form__group-title">Akceptuję Politykę Prywatności</label>
+
+                    </div>
+
+                    <div class="form__group form__group--checkbox">
+
+                        <div class="form__group-checkbox">
+                            <input type="checkbox" id="newsletter" />
+                            <label for="newsletter" class="toggle"><span></span></label>
                         </div>
 
-                        <div class="contact__box">
-                            <i class="contact__box-icon"></i>
-                            <div class="contact__box-place">
-                                <h4 class="contact__box-title">lookreacja@gmail.com</h4>
-                            </div>
-                        </div>
+                        <label for="newsletter" class="form__group-title">Subskrypcja newslettera</label>
+
+                    </div>
+
+
+                    <input type="submit" value="Wyślij" class="form__btn">
+
+                </form>
+
+
+
+
+                <div class="contact__info">
+                    <img src="./img/img-contact.jpg" alt="" class="contact__img">
+                    <p class="contact__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, ab
+                        facilis
+                        similique dolorem vitae provident culpa tempore molestiae ipsam ut. Lorem ipsum dolor sit amet
+                        consectetur, adipisicing elit. Ea neque, voluptatem dolorem saepe dolor eligendi. </p>
+
+
+                </div>
+
+                <div class="contact__box">
+                    <i class="fa-solid fa-location-dot contact__box-icon"></i>
+                    <div class="contact__box-place">
+                        <h4 class="contact__box-title">80-844 Gdańsk</h4>
+                        <p class="contact__box-text">ul. Grunwaldzka 21/37</p>
+                    </div>
+                </div>
+
+                <div class="contact__box">
+
+                    <i class="fa-solid fa-phone info__icon contact__box-icon"></i>
+                    <div class="contact__box-place">
+                        <h4 class="contact__box-title">123 456 789 / 000 000 000</h4>
+                        <p class="contact__box-text"> Od pon do pt od 8:00 do 18:00</p>
+                    </div>
+                </div>
+
+                <div class="contact__box">
+                    <i class="fa-regular fa-envelope-open contact__box-icon"></i>
+                    <div class="contact__box-place">
+                        <h4 class="contact__box-title">lookreacja@gmail.com</h4>
                     </div>
                 </div>
             </div>
@@ -590,6 +594,9 @@
     <br>
     <br>
     <br>
+
+
+
 
     <script src="./js/main.min.js"></script>
 
