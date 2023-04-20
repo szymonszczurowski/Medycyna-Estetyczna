@@ -1,36 +1,78 @@
-@media (min-width: 768px){
-    .nav{
-        padding: 1.5em 1.5em 1.5em 3em;
+@media (min-width: 768px) {
+	.nav {
+		padding: 1.5em 1.5em 1.5em 3em;
 
-        &__img {
-            width: 250px;
-        }
-    }
+		&__img {
+			width: 250px;
+		}
+	}
 
-    .header{
-        &__heading{
-            margin-bottom: 1em;
-        }
+	.header {
+		&__heading {
+			margin-bottom: 1em;
+		}
 
-        &__text{
-            font-weight: 400;
-            letter-spacing: 2px;
-            font-size: 2.4rem;
-        }
+		&__text {
+			font-weight: 400;
+			letter-spacing: 2px;
+			font-size: 2.4rem;
+		}
+	}
 
-    }
+	.main {
+		.offers {
+			justify-content: space-between;
 
-    .main{
+			&__box {
+				padding: 1em;
+				flex-basis: calc(33.33% - 20px);
+			}
+		}
 
-        .offers{
-            justify-content: space-between;
+		.expertise {
 
-            &__box{
-                padding: 1em;
-                flex-basis: calc(33.33% - 20px);
-               
+            &__heading{
+                font-size: 2.4rem;
             }
 
+			&__boxes {
+				display: flex;
+			}
+
+			&__boxes-box {
+				margin: 1em 1em;
+			}
+
+            &__btn{
+                padding: 1.5em 0;
+                font-size: 1.8rem;
+                margin-top: 3em;
+            }
+		}
+
+        .contact{
+            position: relative;
+            padding-top: 2em;
+            padding-bottom: 2em;
+
+            &__bgimg{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 0.3;
+                background-position: center;
+                background-size: cover;
+                background-image: url('../img/bg-contact.jpg');
+                z-index: -1;
+            }
+
+            &__boxes{
+                background-color: white;
+                border-radius: 15px;
+                z-index: 100;
+            }
         }
-    }
+	}
 }

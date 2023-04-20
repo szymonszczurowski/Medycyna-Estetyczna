@@ -22,7 +22,7 @@ navMobileCloseBtn.addEventListener('click', () => {
     bodyWomen.nextElementSibling.classList.remove('nav__mobile__list--active')
 	bodyFace.nextElementSibling.classList.remove('nav__mobile__list--active')
 	men.nextElementSibling.classList.remove('nav__mobile__list--active')
-    body.style.overflow = 'scroll'
+    body.style.overflow = 'none'
 
 })
 
