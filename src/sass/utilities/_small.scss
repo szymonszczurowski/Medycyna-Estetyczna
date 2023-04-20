@@ -2,10 +2,8 @@
     .nav{
         padding: 1em 1.5em 1em 3em;
 
-        &__mobile{
-            &__button {
-                right: 1em;
-            }
+        &__mobile__button {
+            right: 1em;
         }
     }
 
@@ -13,6 +11,16 @@
         &__heading{
             padding: 0 1em;
             border-bottom: 3px solid $main-color;
+        }
+    }
+
+    .main{
+
+        .offers{
+            &__box{
+                flex-basis: calc(80%);
+               
+            }
         }
     }
 }

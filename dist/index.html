@@ -17,18 +17,21 @@
 </head>
 
 <body>
-    <div class="wrapper-nav">
-        <section class="nav__info">
-    <div>
-      <i class="fa-solid fa-location-dot"></i>
-      <p> Gdańsk, ul. Grunwaldzka 21/37</p>
+
+        <section class="info">
+  <div class="info__boxes">
+    <div class="info__box">
+      <i class="fa-solid fa-location-dot info__icon"></i>
+      <p class="info__text"> Gdańsk, ul. Grunwaldzka 21/37</p>
     </div>
-    <div>
-      <i class="fa-solid fa-phone"></i>
-      <p>Numer kontaktowy: <span> 123 456 789 / 000 000 000</span>
+    <div class="info__box">
+      <i class="fa-solid fa-phone info__icon"></i>
+      <p class="info__text">Numer kontaktowy: <span class="info__span"> 123 456 789 / 000 000 000</span>
       </p>
     </div>
+  </div>
   </section>
+
   <nav class="nav">
     <img src="./img/logo3.png" alt="logo" class="nav__img">
     <button class="hamburger hamburger--spin " type="button">
@@ -72,6 +75,9 @@
                 </li>
                 <li class="nav__mobile__item">
                   <a href="#">Odmładzanie dłoni</a>
+                </li>
+                <li class="nav__mobile__item">
+                  <a href="#">Usuwanie ciemnych kręgów</a>
                 </li>
               </ul>
             </li>
@@ -158,12 +164,13 @@
     <div class="nav__reservation">
       <a href="#">
         <i class="fa-regular fa-calendar"></i>
-        <span>Rezerwacja</span>
+        Rezerwacja
       </a>
     </div>
     <div class="nav__box nav__box--women">
       <div class="nav__box__img nav__box__img--women"></div>
       <div class="nav__box__shadow"></div>
+      
       <div class="nav__box__content">
         <h3 class="nav__box__title">Pielęgnacja twarzy</h3>
         <div>
@@ -206,6 +213,8 @@
             <i class="fa-solid fa-caret-right"></i>Zabieg na pośladki</a>
           <a class="nav__box__item" href="#">
             <i class="fa-solid fa-caret-right"></i>Odmładzanie szyi i dekoltu</a>
+            <a class="nav__box__item" href="#">
+              <i class="fa-solid fa-caret-right"></i>Usuwanie ciemnych kręgów</a>
         </div>
       </div>
     </div>
@@ -243,29 +252,189 @@
         </header>
 
         <div class="header__nav">
-            <p><a href="#">Home</a> / <a href="#">Kobiety</a></p>
+            <p class="header__nav-paragraph"><a href="#" class="header__nav-link">Home</a> / <a href="#"  class="header__nav-link">Kobiety</a></p>
         </div>
-    </div>
+  
 
 
     <main class="main">
         <div class="wrapper">
-            <h2 class="main-title">Nasze zabiegi medycny estetycznej</h2>
+        
+            <div class="main__box section">
+            <h2 class="main__title">Nasze zabiegi medycny estetycznej</h2>
 
-            <section class="main__about-us section">
-                <p class="main__about-us__text">W LOOKreacja mamy szeroką gamę zabiegów na twarz i ciało dla kobiet. Zostały zaprojektowane tak, abyś mógł skorygować te niedoskonałości bez konieczności operacji i szybkiego powrotu do zdrowia. Doradzamy osobiście, prowadząc bezkompromisowo w doborze leczenia jakiego potrzebujesz. Poproś o wizytę, a dr Carrasco odwiedzi Cię w naszej klinice.</p>
-            </section>
+            <p class="main__text">W LOOKreacja mamy szeroką gamę zabiegów na twarz i ciało dla kobiet. Zostały zaprojektowane tak, abyś mógł skorygować te niedoskonałości bez konieczności operacji i szybkiego powrotu do zdrowia. Doradzamy osobiście, prowadząc bezkompromisowo w doborze leczenia jakiego potrzebujesz.</p>
+        </div>
 
-            <section class="main__offers">
-                <div class="main__offers__box">
-                    <div class="main__offers__box__img">
-                        <img src="../img/page_women/women-1.jpg" alt="">
+            <section class="offers section">
+
+                <div class="offers__box">
+                    <div class="offers__box-img">
+                        <img src="../img/page_women/women-1.jpg" alt="" class="offers__img">
                     </div>
-                    <p class="main__offers__box__title">Bezbolesna fotodepilacja</p>
-                    <a href="" class="main__offers__btn">Zobacz</a>
+                    
+                    <div class="offers__box-content">
+                        <p class="offers__title">Bezbolesna fotodepilacja</p>
+                        <a href="" class="offers__btn">Zobacz</a>
+                    </div>
                 </div>
-            </section>
 
+                <div class="offers__box">
+                    <div class="offers__box-img">
+                        <img src="../img/page_women/women-2.jpg" alt="" class="offers__img">
+                    </div>
+                    
+                    <div class="offers__box-content">
+                        <p class="offers__title">Powiększanie ust</p>
+                        <a href="" class="offers__btn">Zobacz</a>
+                    </div>
+                </div>
+
+                <div class="offers__box">
+                    <div class="offers__box-img">
+                        <img src="../img/page_women/women-3.jpg" alt="" class="offers__img">
+                    </div>
+                    
+                    <div class="offers__box-content">
+                        <p class="offers__title">Mezoterapia twarzy</p>
+                        <a href="" class="offers__btn">Zobacz</a>
+                    </div>
+                </div>
+
+                <div class="offers__box">
+                    <div class="offers__box-img">
+                        <img src="../img/page_women/women-4.jpg" alt="" class="offers__img">
+                    </div>
+                    
+                    <div class="offers__box-content">
+                        <p class="offers__title">Liwidacja trądziku</p>
+                        <a href="" class="offers__btn">Zobacz</a>
+                    </div>
+                </div>
+
+                <div class="offers__box">
+                    <div class="offers__box-img">
+                        <img src="../img/page_women/women-5.jpg" alt="" class="offers__img">
+                    </div>
+                    
+                    <div class="offers__box-content">
+                        <p class="offers__title">Leczenie rozstępów</p>
+                        <a href="" class="offers__btn">Zobacz</a>
+                    </div>
+                </div>
+
+                <div class="offers__box">
+                    <div class="offers__box-img">
+                        <img src="../img/page_women/women-6.jpg" alt="" class="offers__img">
+                    </div>
+                    
+                    <div class="offers__box-content">
+                        <p class="offers__title">Peeling twarzy</p>
+                        <a href="" class="offers__btn">Zobacz</a>
+                    </div>
+                </div>
+
+                <div class="offers__box">
+                    <div class="offers__box-img">
+                        <img src="../img/page_women/women-7.jpg" alt="" class="offers__img">
+                    </div>
+                    
+                    <div class="offers__box-content">
+                        <p class="offers__title">Odmładzanie płata twarzy</p>
+                        <a href="" class="offers__btn">Zobacz</a>
+                    </div>
+                </div>
+
+                <div class="offers__box">
+                    <div class="offers__box-img">
+                        <img src="../img/page_women/women-8.jpg" alt="" class="offers__img">
+                    </div>
+                    
+                    <div class="offers__box-content">
+                        <p class="offers__title">Stymulacja mięśni</p>
+                        <a href="" class="offers__btn">Zobacz</a>
+                    </div>
+                </div>
+
+                <div class="offers__box">
+                    <div class="offers__box-img">
+                        <img src="../img/page_women/women-9.jpg" alt="" class="offers__img">
+                    </div>
+                    
+                    <div class="offers__box-content">
+                        <p class="offers__title">Odmładzanie dłoni</p>
+                        <a href="" class="offers__btn">Zobacz</a>
+                    </div>
+                </div>
+                <div class="offers__box">
+                    <div class="offers__box-img">
+                        <img src="../img/page_women/women-10.jpg" alt="" class="offers__img">
+                    </div>
+                    
+                    <div class="offers__box-content">
+                        <p class="offers__title">Leczenie celluitu</p>
+                        <a href="" class="offers__btn">Zobacz</a>
+                    </div>
+                </div>
+
+                <div class="offers__box">
+                    <div class="offers__box-img">
+                        <img src="../img/page_women/women-11.jpg" alt="" class="offers__img">
+                    </div>
+                    
+                    <div class="offers__box-content">
+                        <p class="offers__title">Intymne odmładzanie</p>
+                        <a href="" class="offers__btn">Zobacz</a>
+                    </div>
+                </div>
+
+                <div class="offers__box">
+                    <div class="offers__box-img">
+                        <img src="../img/page_women/women-12.jpg" alt="" class="offers__img">
+                    </div>
+                    
+                    <div class="offers__box-content">
+                        <p class="offers__title">Wyeliminowanie tkanki tłuszczowej</p>
+                        <a href="" class="offers__btn">Zobacz</a>
+                    </div>
+                </div>
+
+                <div class="offers__box">
+                    <div class="offers__box-img">
+                        <img src="../img/page_women/women-13.jpg" alt="" class="offers__img">
+                    </div>
+                    
+                    <div class="offers__box-content">
+                        <p class="offers__title">Zabieg na pośladki</p>
+                        <a href="" class="offers__btn">Zobacz</a>
+                    </div>
+                </div>
+
+                <div class="offers__box">
+                    <div class="offers__box-img">
+                        <img src="../img/page_women/women-14.jpg" alt="" class="offers__img">
+                    </div>
+                    
+                    <div class="offers__box-content">
+                        <p class="offers__title">Odmładzanie szyi i dekoltu</p>
+                        <a href="" class="offers__btn">Zobacz</a>
+                    </div>
+                </div>
+
+                <div class="offers__box">
+                    <div class="offers__box-img">
+                        <img src="../img/page_women/women-15.jpg" alt="" class="offers__img">
+                    </div>
+                    
+                    <div class="offers__box-content">
+                        <p class="offers__title">Usuwanie ciemnych kręgów</p>
+                        <a href="" class="offers__btn">Zobacz</a>
+                    </div>
+                </div>
+
+                
+
+            </section>
         </div>
     </main>
 

@@ -4,37 +4,41 @@
 		display: none;
 	}
 
-	.nav {
-		padding: 1.5em 2em;
+	.info {
+		border-bottom: 1px solid rgba(0, 0, 0, 0.142);
 
-		&__img {
-			width: 250px;
-		}
-
-		&__info {
+		&__boxes {
 			display: flex;
 			justify-content: space-between;
 			top: 0;
 			left: 0;
 			padding: 1.3em 2em;
-			border-bottom: 1px solid rgba(0, 0, 0, 0.142);
+			max-width: 2000px;
+		}
 
-			p {
-				display: inline-block;
-				color: $color-info;
-				font-size: 1.6rem;
-			}
+		&__text {
+			display: inline-block;
+			color: $color-info;
+			font-size: 1.6rem;
+		}
 
-			i {
-				margin-right: 0.2em;
-				color: $main-color;
-				font-size: 1.6rem;
-			}
+		&__icon {
+			margin-right: 0.2em;
+			color: $main-color;
+			font-size: 1.6rem;
+		}
 
-			span {
-				font-weight: 500;
-				color: $main-color;
-			}
+		&__span {
+			font-weight: 500;
+			color: $main-color;
+		}
+	}
+
+	.nav {
+		padding: 1.5em 2em;
+
+		&__img {
+			width: 250px;
 		}
 
 		&__desktop {
@@ -47,51 +51,51 @@
 
 			&__item {
 				list-style: none;
+			}
 
-				a {
-					position: relative;
-					padding: 0.5em;
-					margin: 0 0.5em;
-					font-size: 1.6rem;
-					letter-spacing: 2px;
-					text-transform: uppercase;
-					text-decoration: none;
-					font-weight: 300;
-					color: $color-item-nav;
-					z-index: 10;
+			&__item a {
+				position: relative;
+				padding: 0.5em;
+				margin: 0 0.5em;
+				font-size: 1.6rem;
+				letter-spacing: 2px;
+				text-transform: uppercase;
+				text-decoration: none;
+				font-weight: 300;
+				color: $color-item-nav;
+				z-index: 10;
 
-					&::after,
-					&::before,
-					& {
-						transition: transform 0.3s;
-					}
+				&::after,
+				&::before,
+				& {
+					transition: transform 0.3s;
+				}
 
-					&:hover {
-						color: $main-color;
-					}
+				&:hover {
+					color: $main-color;
+				}
 
-					&::after,
-					&::before {
-						content: '';
-						position: absolute;
-						width: 0;
-						bottom: 0;
-						border-bottom: 2px solid $main-color;
-						transition: 0.3s;
-					}
+				&::after,
+				&::before {
+					content: '';
+					position: absolute;
+					width: 0;
+					bottom: 0;
+					border-bottom: 2px solid $main-color;
+					transition: 0.3s;
+				}
 
-					&::after {
-						left: 50%;
-					}
+				&::after {
+					left: 50%;
+				}
 
-					&::before {
-						right: 50%;
-					}
+				&::before {
+					right: 50%;
+				}
 
-					&:hover::before,
-					&:hover::after {
-						width: 50%;
-					}
+				&:hover::before,
+				&:hover::after {
+					width: 50%;
 				}
 			}
 		}
@@ -108,9 +112,9 @@
 				font-weight: 300;
 				letter-spacing: 2px;
 				text-decoration: none;
-				transition: background-color .3s;
+				transition: background-color 0.3s;
 
-				&:hover{
+				&:hover {
 					background-color: $main-color-dark2;
 				}
 			}
@@ -131,121 +135,108 @@
 			justify-content: center;
 			background-color: #f8f8f8;
 			z-index: 10;
+		}
 
-		
-            &__img{
-                position: absolute;
-                top: 0;
-                left: 0;
-                height: 100%;
-                width: 100%;
-                opacity: 1;
-                background-position: center;
-                background-size: cover;
-                z-index: 1;
+		&__box__img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			opacity: 1;
+			background-position: center;
+			background-size: cover;
+			z-index: 1;
 
-                &--women {
-                    background-image: url('../img/nav-women.jpg');
-                }
-                
-                &--men {
-                    background-image: url('../img/nav-men.jpg');
-                }
-
-            }
-
-            &__shadow{
-                position: absolute;
-                top: 0;
-                left: 0;
-                height: 100%;
-                width: 100%;
-                opacity: 0.6;
-                background-color: rgba(0, 0, 0, 0.977);
-                z-index: 2;
-
-            }
-
-			&__content {
-                position: relative;
-				display: grid;
-				grid-template-columns: repeat(2, 1fr);
-                text-align: center;
-				margin: 0 4em;
-                opacity: 1;
-                color: dark;
-                color: white;
-                z-index: 100;
-
-				div {
-					align-items: flex-start;
-                    display: flex;
-                    flex-direction: column;
-				}
-
+			&--women {
+				background-image: url('../img/nav-women.jpg');
 			}
 
-            
-            &__item{
-                padding: 0.5em;
-                margin: 0.5em 0;
-                text-decoration: none;
-                color: white;
-                transition: color .3s;
-                letter-spacing: 1px;
+			&--men {
+				background-image: url('../img/nav-men.jpg');
+			}
+		}
 
-                &:hover{
-                    color: $main-color-light;
-                }
+		&__box__shadow {
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			opacity: 0.6;
+			background-color: rgba(0, 0, 0, 0.977);
+			z-index: 2;
+		}
 
-                i{
-                    color: $main-color-light-2;
-                    font-size: 2rem;
-                    margin-right: 0.3em;
-                }
-            }
+		&__box__content {
+			flex: 1;
+			max-width: 650px;
+			position: relative;
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			text-align: center;
+			margin: 0 1em;
+			opacity: 1;
+			color: dark;
+			color: white;
+			z-index: 100;
 
-			&__title {
-				grid-column: 1/-1;
-                margin-bottom: 1em;
-                border-bottom: 2px solid $main-color-light-2;
+			div {
+				align-items: flex-start;
+				display: flex;
+				flex-direction: column;
+			}
+		}
+
+		&__box__item {
+			text-align: left;
+			padding: 0.5em;
+			margin: 0.5em 0;
+			text-decoration: none;
+			color: white;
+			transition: color 0.3s;
+
+			&:hover {
+				color: $main-color-light;
 			}
 
-			// &--women{
-			//     display: flex;
-			// }
+			i {
+				color: $main-color-light-2;
+				font-size: 2rem;
+				margin-right: 0.3em;
+			}
+		}
+
+		&__box__title {
+			grid-column: 1/-1;
+			height: 70px;
+			margin-bottom: 1em;
+			border-bottom: 2px solid $main-color-light-2;
 		}
 	}
 
-	.header{
-		&__img{
+	.header {
+		&__img {
 			background-size: none;
-			&--header-women{
+
+			&--header-women {
 				background-image: url('../img/header-woman-desktop.jpg');
 			}
 		}
 
-		&__heading{
+		&__heading {
 			font-size: 5rem;
 		}
-        &__text{
-            font-weight: 400;
-            letter-spacing: 2px;
-            font-size: 2.4rem;
-        }
+		&__text {
+			font-weight: 400;
+			letter-spacing: 2px;
+			font-size: 2.4rem;
+		}
 
-		&__nav{
-            padding: 1.5em 3em;
-
-            a{
-                transition: color .3s;
-                
-                &:hover{
-                    color: $main-color-light-2;
-                }
-            }
-        }
-    }
+		&__nav {
+			padding: 1.5em 3em;
+		}
+	}
 }
 
 @media (min-width: 1200px) {
@@ -255,84 +246,54 @@
 		}
 
 		&__desktop {
-			&__item {
-				a {
-					font-size: 1.8rem;
-				}
+			&__item a {
+				font-size: 1.8rem;
 			}
 		}
-		&__box{
+
+		&__box {
 			top: 100px;
 		}
 
-		&__reservation {
-			a {
-				padding: 1em 1.5em;
-				font-size: 1.6rem;
-			}
+		&__box__content {
+			margin: 0 4em;
+		}
+		&__box__item {
+			letter-spacing: 1px;
+		}
+		&__box__title {
+			height: none;
+		}
 
-			i {
-				margin-right: 0.4em;
-			}
+		&__reservation a {
+			padding: 1em 1.5em;
+			font-size: 1.6rem;
 		}
 	}
 }
 
 @media (min-width: 1400px) {
+	.info {
+		&__boxes {
+			padding: 1.3em 4em;
+		}
+	}
+
 	.nav {
 		padding: 1.5em 4em;
 
-		&__info {
-			padding: 1.3em 4em;
-		}
-
 		&__desktop {
-			&__item {
-				a {
-					margin: 0 1em;
-					letter-spacing: 3px;
-				}
-			}
-
-			&__reservation {
-				a {
-					letter-spacing: 3px;
-				}
-
-				i {
-					margin-right: 0.3em;
-				}
+			&__item a {
+				margin: 0 1em;
+				letter-spacing: 3px;
 			}
 		}
 
-		&__reservation {
-			a {
-				padding: 1em 2em;
-			}
+		&__reservation a {
+			padding: 1em 2em;
 		}
 	}
 }
 
 @media (min-width: 1800px) {
-	.nav {
-		&__desktop {
-			&__item {
-				a {
-					font-size: 2.1rem;
-				}
-			}
-
-			&__reservation {
-				i {
-					margin-right: 0.3em;
-				}
-			}
-		}
-
-		&__reservation {
-			a {
-				padding: 1em 3em;
-			}
-		}
-	}
 }

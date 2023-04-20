@@ -7,9 +7,12 @@ const hamburgerBtn = document.querySelector('.hamburger')
 const navMobile = document.querySelector('.nav__mobile')
 const navMobileCloseBtn = document.querySelector('.nav__mobile__button')
 
+const body = document.querySelector('body')
+
 hamburgerBtn.addEventListener('click', () => {
     navMobile.classList.toggle('nav__mobile--active')
     hamburgerBtn.classList.toggle('is-active')
+    body.style.overflow = 'hidden'
 })
 
 
@@ -19,6 +22,7 @@ navMobileCloseBtn.addEventListener('click', () => {
     bodyWomen.nextElementSibling.classList.remove('nav__mobile__list--active')
 	bodyFace.nextElementSibling.classList.remove('nav__mobile__list--active')
 	men.nextElementSibling.classList.remove('nav__mobile__list--active')
+    body.style.overflow = 'scroll'
 
 })
 
