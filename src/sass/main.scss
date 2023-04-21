@@ -324,7 +324,7 @@ body {
 		}
 
 		&__text {
-			color: $text-color;
+			color: $text-color2;
 		}
 
 		&__btn {
@@ -351,19 +351,61 @@ body {
 		padding-bottom: 2em;
 		display: flex;
 		justify-content: center;
-		
 
 		&__boxes {
-			padding: 2em 1em;
 			border-radius: 15px;
-			max-width: 1300px;
+			max-width: 1200px;
 			font-size: 1.4rem;
 			font-weight: 300;
 			border: 1px solid #bdb8b8;
-			background-color: #f9f9f9;
+			background-color: white;
+			color: $text-color2;
+		}
+
+		&__info {
+			position: relative;
+			margin-top: 2em;
+			padding: 3em 0;
+			text-align: center;
+			background-color: #fbf9f9;
+			border-bottom-left-radius: 15px;
+			border-bottom-right-radius: 15px;
+		}
+
+		&__info-img {
+			width: 90%;
+			// border-radius: 800px;
+			border-radius: 15px;
+			opacity: 0.8;
+		}
+
+		&__info-description {
+			margin: 2em 0;
+			font-size: 1.6rem;
+			letter-spacing: 1px;
+			line-height: 3rem;
+			font-weight: 400;
+		}
+
+		&__info-box {
+			padding: 1em;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		&__info-icon {
+			color: $main-color;
+			font-size: 2.5rem;
+			margin-bottom: 0.5em;
+		}
+
+		&__info-title {
+			font-weight: 700;
 		}
 
 		.form {
+			padding: 2em;
 			&__group {
 				display: flex;
 				flex-direction: column;
@@ -377,8 +419,9 @@ body {
 				text-align: center;
 				padding-bottom: 1em;
 				font-size: 2.2rem;
-				font-weight: 400;
+				font-weight: 500;
 				letter-spacing: 2px;
+				color: $text-color;
 			}
 
 			&__btn {
@@ -426,41 +469,6 @@ body {
 				margin-right: 0.5em;
 				margin-bottom: 0.5em;
 			}
-		}
-
-		&__info {
-			position: relative;
-			margin-top: 5em;
-			text-align: center;
-		}
-
-		&__img {
-			width: 90%;
-			border-radius: 800px;
-			opacity: 0.9;
-		}
-
-		&__text {
-			margin: 2em 0;
-			font-size: 1.6rem;
-			letter-spacing: 1px;
-			line-height: 3rem;
-		}
-
-		&__box {
-			padding: 1em;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			
-		}
-	
-
-		&__box-icon {
-			color: $main-color;
-			font-size: 2.5rem;
-			margin-bottom: 0.5em;
-			margin-right: 1em;
 		}
 	}
 }
