@@ -6,7 +6,6 @@
 
 	.info {
 		border-bottom: 1px solid $border-color-on-light;
-
 		&__boxes {
 			display: flex;
 			justify-content: space-between;
@@ -29,13 +28,20 @@
 		}
 
 		&__span {
+			margin-left: 0.2em;
 			font-weight: 500;
 			color: $main-color;
 		}
 	}
 
 	.nav {
-		padding: 1.5em 2em;
+		padding: 1em 2em 1em 2em;
+		border-bottom: 1px solid #ced1d6;
+
+		&__logo {
+			height: 80px;
+			width: 164px;
+		}
 
 		&__desktop {
 			display: flex;
@@ -112,6 +118,7 @@
 
 				&:hover {
 					background-color: $main-color-hover;
+					transform: scale(5);
 				}
 			}
 
@@ -122,7 +129,7 @@
 
 		&__box {
 			position: absolute;
-			top: 82px;
+			top: 112px;
 			left: 0;
 			right: 0;
 			width: 100%;
@@ -130,6 +137,8 @@
 			padding: 2em;
 			justify-content: center;
 			background-color: white;
+			border-bottom: 1px solid $border-color-on-light;
+			border-top: 1px solid $border-color-on-light;
 			z-index: 10;
 		}
 
@@ -153,18 +162,16 @@
 		//   }
 		// }
 
-		&__box__shadow {
-			position: absolute;
-			top: 0;
-			left: 0;
-			height: 100%;
-			width: 100%;
-			opacity: 0.6;
-			background-color: white;
-			border-bottom: 1px solid #141414;
-			border-top: 1px solid $border-color-on-light;
-			z-index: 2;
-		}
+		// &__box__shadow {
+		// 	position: absolute;
+		// 	top: 0;
+		// 	left: 0;
+		// 	height: 100%;
+		// 	width: 100%;
+		// 	opacity: 0.6;
+
+		// 	z-index: 2;
+		// }
 
 		&__box__content {
 			flex: 1;
@@ -189,6 +196,7 @@
 			text-align: left;
 			padding: 0.5em;
 			width: 80%;
+			height: 55px;
 			margin: 0.5em 0;
 			text-decoration: none;
 			color: $text-color-on-light;
@@ -284,11 +292,14 @@
 	}
 
 	.header {
+
+
 		&__img {
-			background-size: none;
+			background-size: cover;
+			background-position: center;
 
 			&--header-women {
-				background-image: url('../img/header-woman-desktop.jpg');
+				background-image: url('../img/header2.jpg');
 			}
 		}
 
@@ -303,15 +314,12 @@
 
 		&__nav {
 			padding: 1.5em 3em;
+	
 		}
 	}
 
 	.main {
-		background-image: url('../img/tlo.png');
-		background-position:left;
-		background-repeat: no-repeat;
 		.contact {
-			
 			.form {
 				padding: 3em;
 				display: grid;
@@ -354,10 +362,6 @@
 
 @media (min-width: 1200px) {
 	.nav {
-		&__img {
-			width: 200px;
-		}
-
 		&__desktop {
 			&__item a {
 				font-size: 1.8rem;
@@ -401,7 +405,7 @@
 	}
 
 	.nav {
-		padding: 1.5em 4em;
+		padding: 1em 4em;
 
 		&__desktop {
 			&__item a {
