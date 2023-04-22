@@ -1,23 +1,20 @@
-@media (min-width: 576px){
-    .nav{
-        padding: 1em 1.5em 1em 3em;
-
+@media (min-width: 576px) {
+    .nav {
+      padding: 1em 1.5em 1em 3em;
     }
-
-    .header{
-        &__heading{
-            padding: 0 1em;
-            border-bottom: 3px solid $main-color;
+  
+    .header {
+      &__heading {
+        padding: 0 1em;
+      }
+    }
+  
+    .main {
+      .offers {
+        &__box {
+          flex-basis: calc(80%);
         }
+      }
     }
-
-    .main{
-
-        .offers{
-            &__box{
-                flex-basis: calc(80%);
-               
-            }
-        }
-    }
-}
+  }
+  
