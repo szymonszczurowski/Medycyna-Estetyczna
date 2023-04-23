@@ -25,6 +25,9 @@
 		&-1 {
 			left: 0;
 			top: 120%;
+			
+			&--men {
+				top: 160%;			}
 		}
 		&-2 {
 			right: 0;
@@ -33,6 +36,10 @@
 		&-3 {
 			top: 350%;
 			right: 0;
+
+			&--men {
+				top: 150%;
+			}
 		}
 		&-4 {
 			left: 58%;
@@ -42,16 +49,28 @@
 		&-5 {
 			left: 0;
 			top: 350%;
+
+			&--men {
+				display: none;
+			}
 		}
 
 		&-6 {
 			left: 50%;
 			top: 290%;
+
+			&--men {
+				display: none;
+			}
 		}
 
 		&-7 {
 			right: 0;
 			top: 450%;
+
+			&--men {
+				top: 350%;
+			}
 		}
 
 		&-8 {

@@ -293,6 +293,22 @@
 
 	.header {
 
+		&__img {
+			background-size: cover;
+			background-position: center;
+			background-attachment: fixed;
+	
+			&--header-women {
+				background-image: url('../img//header/header-women-desktop.jpg');
+			}
+	
+			&--header-men {
+				background-image: url('../img//header/header-men-desktop.jpg');
+			}
+			
+		
+		}
+
 		&__heading {
 			font-size: 5rem;
 		}
