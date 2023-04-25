@@ -1,18 +1,24 @@
-@media (min-width: 576px){
-    .nav{
-        padding: 1em 1.5em 1em 3em;
+@media (min-width: 576px) {
+    .nav {
+      padding: 1em 1.5em 1em 3em;
 
-        &__mobile{
-            &__button {
-                right: 1em;
-            }
-        }
+      
     }
+  
+    .header {
+      &__heading {
+        padding: 0 1em;
+      }
+    }
+  
+    .main {
+      .offers {
+        &__box {
+          flex-basis: calc(80%);
+        }
+      }
+    }
+  }
+  
 
-    .header{
-        &__heading{
-            padding: 0 1em;
-            border-bottom: 3px solid $main-color;
-        }
-    }
-}
+  

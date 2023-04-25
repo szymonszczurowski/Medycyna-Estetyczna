@@ -1,41 +1,151 @@
 @use '../components/colors' as *;
 
 .wrapper {
-    text-align: center;
+	text-align: center;
 	margin: 0 auto;
 	width: 100%;
 	max-width: 1200px;
 }
 
-.wrapper-nav {
-	margin: 0 auto;
-	width: 100%;
-	max-width: 2000px;
+.section {
+	margin-top: 5em;
+	padding: 0 2em;
 }
 
-.main-title{
-    display: inline-block;
-    position: relative;
-    text-align: center;
-    padding-bottom: 0.5em;
-    margin-top: 3em;
-    font-weight: 400;
-    letter-spacing: 2px;
+.button {
+	display: inline-block;
+	text-align: center;
+	padding: 1em;
+	background-color: #d19648;
+	color: $text-color-on-dark;
+	border-radius: 25px;
+	text-decoration: none;
+	z-index: 1;
+	letter-spacing: 1px;
+	transition: background-color 0.3s, color 0.3s;
 
-    &::after{
-        position: absolute;
-        content: '';
-        height: 2px;
-        width: 70%;
-        bottom: 0;
-        left: 15%;
-        background-color: $main-color;
+	&:hover {
+		background-color: #c77f22;
+	}
 
-    }
+	&--white {
+		background-color: #fff;
+		color: #d19648;
+	}
 
+	&--white:hover {
+		color: #fff;
+		background-color: #292929;
+	}
+}
+//tytuły
+//2.6
+//3.2
+
+
+//text
+//1.6
+
+//przycski
+//1.6
+
+.title{
+	display: inline-block;
+	position: relative;
+	margin-bottom: 2em;
+	padding-left: 1em;
+	padding-right: 1em;
+	text-align: center;
+	font-weight: 400;
+	letter-spacing: 2px !important;
+	font-size: 2.6rem !important;
+
+	span {
+		color: $main-color;
+	}
 }
 
-.section{
-    margin-top: 3em;
-    padding: 0 2em;
+
+.shape-bgc {
+	display: none;
 }
+
+@media (min-width: 992px) {
+	
+	.title{
+		font-size: 3.5rem !important;
+	}
+
+
+
+	.shape-bgc {
+		display: flex;
+		position: absolute;
+		z-index: -50;
+
+		&-1 {
+			left: 0;
+			top: 120%;
+
+			&--men {
+				top: 160%;
+			}
+		}
+		&-2 {
+			right: 0;
+			top: 75%;
+		}
+		&-3 {
+			top: 350%;
+			right: 0;
+
+			&--men {
+				top: 150%;
+			}
+		}
+		&-4 {
+			left: 58%;
+			top: 190%;
+		}
+
+		&-5 {
+			left: 0;
+			top: 350%;
+
+			&--men {
+				display: none;
+			}
+		}
+
+		&-6 {
+			left: 50%;
+			top: 290%;
+
+			&--men {
+				display: none;
+			}
+		}
+
+		&-7 {
+			right: 0;
+			top: 450%;
+
+			&--men {
+				top: 350%;
+			}
+		}
+
+		&-8 {
+			width: 50px;
+			left: 50%;
+			top: 0;
+		}
+
+		&-9 {
+			width: 50px;
+			left: 30%;
+			top: 0;
+		}
+	}
+}
+

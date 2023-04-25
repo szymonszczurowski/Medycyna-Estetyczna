@@ -5,29 +5,25 @@ const bodyFace = document.querySelector('#women-face')
 
 const hamburgerBtn = document.querySelector('.hamburger')
 const navMobile = document.querySelector('.nav__mobile')
-const navMobileCloseBtn = document.querySelector('.nav__mobile__button')
+
+const body = document.querySelector('body')
+
 
 hamburgerBtn.addEventListener('click', () => {
     navMobile.classList.toggle('nav__mobile--active')
     hamburgerBtn.classList.toggle('is-active')
-})
-
-
-navMobileCloseBtn.addEventListener('click', () => {
-    navMobile.classList.toggle('nav__mobile--unactive')
-	hamburgerBtn.classList.toggle('is-active')
+    body.classList.toggle('overflow')
     bodyWomen.nextElementSibling.classList.remove('nav__mobile__list--active')
 	bodyFace.nextElementSibling.classList.remove('nav__mobile__list--active')
 	men.nextElementSibling.classList.remove('nav__mobile__list--active')
-
 })
+
+
 
 women.addEventListener('click', () => {
 	const list = women.nextElementSibling
 	list.classList.toggle('nav__mobile__list--active')
-	bodyWomen.nextElementSibling.classList.remove('nav__mobile__list--active')
-	bodyFace.nextElementSibling.classList.remove('nav__mobile__list--active')
-	men.nextElementSibling.classList.remove('nav__mobile__list--active')
+
 })
 
 bodyWomen.addEventListener('click', () => {
