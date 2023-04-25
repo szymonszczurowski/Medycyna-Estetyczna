@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zabiegi estetyczne w Gdańsku - LOOKreacja</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
         <script src="https://kit.fontawesome.com/f66f15b613.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,8 +20,7 @@
 </head>
 
 <body>
-
-    <!-- <img src="./img/shape_bgc/tlo-1.png" class="shape-bgc shape-bgc-1 shape-bgc-1--men">
+    <img src="./img/shape_bgc/tlo-1.png" class="shape-bgc shape-bgc-1 shape-bgc-1--men">
     <img src="./img/shape_bgc/tlo-2.png" class="shape-bgc shape-bgc-2 shape-bgc-2--men">
     <img src="./img/shape_bgc/tlo-3.png" class="shape-bgc shape-bgc-3 shape-bgc-3--men">
     <img src="./img/shape_bgc/tlo-4.png" class="shape-bgc shape-bgc-4 shape-bgc-4--men">
@@ -27,8 +28,7 @@
     <img src="./img/shape_bgc/tlo-5.png" alt="" class="shape-bgc shape-bgc-6 shape-bgc-6--men">
     <img src="./img/shape_bgc/tlo-3.png" alt="" class="shape-bgc shape-bgc-7 shape-bgc-7--men">
     <img src="./img/shape_bgc/tlo-6.png" alt="" class="shape-bgc shape-bgc-8 shape-bgc-8--men">
-    <img src="./img/shape_bgc/tlo-7.png" alt="" class="shape-bgc shape-bgc-9 shape-bgc-9--men"> -->
-
+    <img src="./img/shape_bgc/tlo-7.png" alt="" class="shape-bgc shape-bgc-9 shape-bgc-9--men">
     
 <nav class="nav">
 
@@ -234,100 +234,262 @@
     </div>
   </div>
 </nav>
-
     <header class="header header--home">
         <div class="header__shadow"></div>
         <img src="./img/logo.png" class="header__logo">
-        <h1 class="header__heading">MOŻEMY ZAPTRZYMAĆ CZAS</h1>
+        <h2 class="header__heading">MOŻEMY ZAPTRZYMAĆ CZAS</h2>
         <p class="header__text">Nie dołownie, ale skutki. Wybróbuj nasze zabiegi, a zrozumiesz.</p>
-
-       
-        <div class="header__box"> 
-            <a href="" class="header__btn"><i class="fa-regular fa-calendar"></i>Zapytaj o wizytę</a>
-            <a href="" class="header__btn header__btn--white header__btn--phone"><i class="fa-solid fa-phone"></i> +48 123 456 789</a>
-            <a href="" class="header__btn header__btn--white header__btn--face">Zabiegi na twarz</a>
-            <a href="" class="header__btn header__btn--body">Zabiegi na ciało</a>
+        <div class="header__box">
+            <a href="" class="button header__btn">
+                <i class="fa-regular fa-calendar"></i>Zapytaj o wizytę </a>
+            <a href="" class="button header__btn header__btn--white header__btn--phone">
+                <i class="fa-solid fa-phone"></i> +48 123 456 789 </a>
+            <a href="" class="button button--white header__btn header__btn--white header__btn--face">Zabiegi na twarz</a>
+            <a href="" class="button header__btn header__btn--body">Zabiegi na ciało</a>
         </div>
-
-
-
         <div class="header__img"></div>
         <video class="header__video" autoplay="" muted="" playsinline="" loop=""
             src="./img/header/header-home-desktop.mp4"></video>
     </header>
+    <main class="main">
+        <div class="wrapper">
+            <div class="main__box section">
+                <h1 class="main__title">Twoja zaufana Klinika Estetyczna w <span>Gdańsku</span>
+                </h1>
+                <div class="main__img">
+                    <img src="./img/page_home/main-img.jpg" alt="">
+                </div>
+                <p class="main__text">W LOOKreacja mamy szeroką gamę zabiegów na twarz i ciało dla kobiet. Zostały
+                    zaprojektowane tak, abyś mógł skorygować te niedoskonałości bez konieczności operacji i szybkiego
+                    powrotu do zdrowia. Doradzamy osobiście, prowadząc bezkompromisowo w doborze leczenia jakiego
+                    potrzebujesz.</p>
+            </div>
+            <section class="recommended section">
+                <h2 class="title">
+                    <span>Polecane wiosenne</span> zabiegi
+                </h2>
+                <div class="recommended__boxes">
+                    <div class="recommended__box">
+                        <img src="./img/page_home/recommended-2.jpg" alt="" class="recommended__img">
+                        <a href="" class="button recommended__btn">Peeling twarzy</a>
+                    </div>
+                    <div class="recommended__box">
+                        <img src="./img/page_home/recommended-3.jpg" alt="" class="recommended__img">
+                        <a href="" class="button recommended__btn">Likwidacja trądziku</a>
+                    </div>
+                    <div class="recommended__box">
+                        <img src="./img/page_home/recommended-4.jpg" alt="" class="recommended__img">
+                        <a href="" class="button recommended__btn">Odmładzanie dłoni</a>
+                    </div>
+                    <div class="recommended__box">
+                        <img src="./img/page_home/recommended-5.jpg" alt="" class="recommended__img">
+                        <a href="" class="button recommended__btn">Powiększanie ust</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="treatments section">
+            <h3 class="treatments__title">Zabiegi <span>na ciało</span>
+            </h3>
+            <div class="treatments__boxes">
+                <div class="treatments__img treatments__img--right">
+                    <img src="./img/page_home/body.jpg" alt="">
+                </div>
+                <div class="treatments__box treatments__box--left">
+                    <h3 class="treatments__title treatments__title--box">Zabiegi <span>na ciało</span>
+                    </h3>
+                    <p class="treatments__text"> Popraw kontur swojego ciała dzięki naszym zabiegom estetycznym.
+                        Odmładzanie dłoni, szyi i dekoltu. Zabiegi antycellulitowe i rozstępowe. </p>
+                    <a href="" class="button treatments__btn">Zobacz zabiegi</a>
+                </div>
+            </div>
+            <h3 class="treatments__title">Zabiegi <span>na twarz</span>
+            </h3>
+            <div class="treatments__boxes">
+                <div class="treatments__img">
+                    <img src="./img/page_home/face.jpg" alt="">
+                </div>
+                <div class="treatments__box">
+                    <h3 class="treatments__title treatments__title--box">Zabiegi <span>na twarz</span>
+                    </h3>
+                    <p class="treatments__text"> Popraw kontur swojego ciała dzięki naszym zabiegom estetycznym.
+                        Odmładzanie dłoni, szyi i dekoltu. Zabiegi antycellulitowe i rozstępowe. </p>
+                    <a href="" class="button treatments__btn">Zobacz zabiegi</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="carousel">
+
+            <div class="carousel__boxes">
+                <div class="carousel__boxes-content">
+                    <h3 class="carousel__boxes-title">Mezoterapia twarzy</h3>
+                    <p class="carousel__boxes-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+                        doloremque inventore aperiam sint quam eligendi tempora, amet optio quis, esse facere pariatur,
+                        tempore tenetur aspernatur.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+                        doloremque inventore aperiam sint quam eligendi tempora, amet optio quis, esse facere pariatur,
+                        tempore tenetur aspernatur.</p>
+                    <a href="" class="button button--white carousel__boxes-btn">Zobacz</a>
+                </div>
+                <div class="carousel__boxes-img">
+                    <img src="./img/page_home/carousel-1.jpg" alt="">
+                </div>
+            </div>
 
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
+            <div class="carousel__boxes">
+                <div class="carousel__boxes-content">
+                    <h3 class="carousel__boxes-title">Stymulacja mięśni</h3>
+                    <p class="carousel__boxes-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+                        doloremque inventore aperiam sint quam eligendi tempora, amet optio quis, esse facere pariatur,
+                        tempore tenetur aspernatur.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+                        doloremque inventore aperiam sint quam eligendi tempora, amet optio quis, esse facere pariatur,
+                        tempore tenetur aspernatur.</p>
+                    <a href="" class="button button--white  carousel__boxes-btn">Zobacz</a>
+                </div>
+                <div class="carousel__boxes-img">
+                    <img src="./img/page_home/carousel-3.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="carousel__boxes">
+                <div class="carousel__boxes-content">
+                    <h3 class="carousel__boxes-title">liposukcja</h3>
+                    <p class="carousel__boxes-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+                        doloremque inventore aperiam sint quam eligendi tempora, amet optio quis, esse facere pariatur,
+                        tempore tenetur aspernatur.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+                        doloremque inventore aperiam sint quam eligendi tempora, amet optio quis, esse facere pariatur,
+                        tempore tenetur aspernatur.</p>
+                    <a href="" class="button button--white  carousel__boxes-btn">Zobacz</a>
+                </div>
+                <div class="carousel__boxes-img">
+                    <img src="./img/page_home/carousel-3.jpg" alt="">
+                </div>
+            </div>
+            
+
+        </section>
+
+        <section class="treatments treatments--second section">
+            <h3 class="treatments__title">Zabiegi dla <span>Mężczyzn</span>
+            </h3>
+            <div class="treatments__boxes">
+                <div class="treatments__img treatments__img--right">
+                    <img src="./img/page_home/men-1.jpg" alt="">
+                </div>
+                <div class="treatments__box treatments__box--left">
+                    <h3 class="treatments__title treatments__title--box">Zabiegi dla <span>Mężczyzn</span>
+                    </h3>
+                    <p class="treatments__text"> Popraw kontur swojego ciała dzięki naszym zabiegom estetycznym.
+                        Odmładzanie dłoni, szyi i dekoltu. Zabiegi antycellulitowe i rozstępowe. </p>
+                    <a href="" class="button treatments__btn">Zobacz zabiegi</a>
+                </div>
+            </div>
+            <h3 class="treatments__title">Kuracja włosów dla<span>Kobiet i Mężczyzn</span>
+            </h3>
+            <div class="treatments__boxes">
+                <div class="treatments__img">
+                    <img src="./img/page_home/men-2.jpg" alt="">
+                </div>
+                <div class="treatments__box">
+                    <h3 class="treatments__title treatments__title--box">Kuracja włosów dla <span>Kobiet i Mężczyzn</span>
+                    </h3>
+                    <p class="treatments__text"> Popraw kontur swojego ciała dzięki naszym zabiegom estetycznym.
+                        Odmładzanie dłoni, szyi i dekoltu. Zabiegi antycellulitowe i rozstępowe. </p>
+                    <a href="" class="button treatments__btn">Zobacz zabiegi</a>
+                </div>
+            </div>
+        </section>
+        <section class="contact section">
+            <div class="contact__bgimg"></div>
+            <div class="contact__boxes">
+    <form action="" class="form" data-aos="fade-right">
+      <h3 class="form__heading">Umów się na wizytę</h3>
+      <div class="form__group">
+        <label for="name" class="form__group-title">Imię i Nazwisko:</label>
+        <input type="text" id="name" class="form__group-input">
+      </div>
+      <div class="form__group form__group--left">
+        <label for="phone" class="form__group-title">Telefon:</label>
+        <input type="number" form="phone" class="form__group-input">
+      </div>
+      <div class="form__group  form__group--right">
+        <label for="email" class="form__group-title">E-mail:</label>
+        <input type="email" id="email" class="form__group-input" required>
+      </div>
+      <div class="form__group">
+        <label for="story" class="form__group-title">Wiadomość:</label>
+        <textarea id="story" class="form__group-textarea"></textarea>
+      </div>
+      <div class="form__group form__group--checkbox">
+        <div class="form__group-checkbox">
+          <input type="checkbox" id="privacy-police" />
+          <label for="privacy-police" class="toggle">
+            <span></span>
+          </label>
+        </div>
+        <label for="privacy-police" class="form__group-title">Akceptuję Politykę Prywatności</label>
+      </div>
+      <div class="form__group form__group--checkbox">
+        <div class="form__group-checkbox">
+          <input type="checkbox" id="newsletter" required>
+          <label for="newsletter" class="toggle">
+            <span></span>
+          </label>
+        </div>
+        <label for="newsletter" class="form__group-title">Subskrypcja newslettera</label>
+      </div>
+      <input type="submit" value="Wyślij" class="button form__btn">
+    </form>
+    <div class="contact__info" data-aos="fade-left">
+      <img src="./img/img-contact.jpg" alt="" class="contact__info-img">
+      <p class="contact__info-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, ab facilis similique dolorem.</p>
+      <div class="contact__info-box">
+        <i class="fa-solid fa-location-dot contact__info-icon"></i>
+        <div class="contact__info-place">
+          <h4 class="contact__info-title">80-844 Gdańsk</h4>
+          <p class="contact__info-text">ul. Grunwaldzka 21/37</p>
+        </div>
+      </div>
+      <div class="contact__info-box">
+        <i class="fa-solid fa-phone info__icon contact__info-icon"></i>
+        <div class="contact__info-place">
+          <h4 class="contact__info-title">+48 123 456 789</h4>
+          <p class="contact__info-text"> Od pon do pt od 8:00 do 18:00</p>
+        </div>
+      </div>
+      <div class="contact__info-box">
+        <i class="fa-regular fa-envelope-open contact__info-icon"></i>
+        <div class="contact__info-place">
+          <h4 class="contact__info-title">lookreacja@gmail.com</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+          </section>
+
+    </main>
 
     <footer class="footer">
     <div class="footer__boxes">
       <div class="footer__box footer__box-women">
-        <h3 class="footer__box-title">Blog:</h3>
+        <h4 class="footer__box-title">Blog:</h4>
         <a href="" class="footer__box-link">Poradniki dla Kobiet</a>
         <a href="" class="footer__box-link">Poradniki dla Mężczyzn</a>
         <a href="" class="footer__box-link">Polecena produkty</a>
       </div>
       <hr>
       <div class="footer__box footer__box-men">
-        <h3 class="footer__box-title">Zasoby:</h3>
+        <h4 class="footer__box-title">Zasoby:</h4>
         <a href="" class="footer__box-link">Mapa strony</a>
         <a href="" class="footer__box-link">Pliki</a>
         <a href="" class="footer__box-link">Zdjęcia</a>
       </div>
       <hr>
       <div class="footer__box footer__box-brand">
-        <h3 class="footer__box-title">Kontakt:</h3>
+        <h4 class="footer__box-title">Kontakt:</h4>
         <p class="footer__box-email">
           <i class="fa-regular fa-envelope"></i>lookrecja@gmail.com
         </p>
@@ -343,18 +505,28 @@
     </div>
     <hr>
     <div class="footer__box footer__box-project">
-      <p class="footer__text">Copyright <span class="current-date">2023</span> - <span class="footer__brand">LOOKrecja</span>
+      <p class="footer__text">Copyright <span class="current-date">2023</span> - <span class="footer__brand">Szymon Szczurowski</span>
       </p>
     </div>
   </footer>
-
     <script src="./js/main.min.js"></script>
     <script src="./js/home.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
-    </script>
+      <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+      <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+      <script type="text/javascript" src="slick/slick.min.js"></script>
+
+
+      <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+      <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+      <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="./js/slick.min.js"></script>
+
+
+				
 </body>
 
 </html>

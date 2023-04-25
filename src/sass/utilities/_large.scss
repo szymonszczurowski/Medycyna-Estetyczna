@@ -1,5 +1,10 @@
 @use '../components/colors' as *;
 @media (min-width: 992px) {
+
+	p{
+		font-size: 18px;
+	}
+
 	.hamburger {
 		display: none;
 	}
@@ -18,7 +23,6 @@
 		&__text {
 			display: inline-block;
 			color: $text-color-info;
-			font-size: 1.6rem;
 		}
 
 		&__icon {
@@ -292,21 +296,18 @@
 	}
 
 	.header {
-
 		&__img {
 			background-size: cover;
 			background-position: center;
 			background-attachment: fixed;
-	
+
 			&--header-women {
 				background-image: url('../img//header/header-women-desktop.jpg');
 			}
-	
+
 			&--header-men {
 				background-image: url('../img//header/header-men-desktop.jpg');
 			}
-			
-		
 		}
 
 		&__heading {
@@ -320,11 +321,13 @@
 
 		&__nav {
 			padding: 1.5em 3em;
-	
 		}
 	}
 
 	.main {
+		&__title {
+			font-size: 3.8rem;
+		}
 		.contact {
 			.form {
 				padding: 3em;
@@ -390,6 +393,12 @@
 		}
 	}
 
+	.main {
+		&__text {
+			font-size: 1.8rem;
+		}
+	}
+
 	.footer {
 		display: flex;
 		flex-direction: column;
@@ -426,5 +435,3 @@
 	}
 }
 
-@media (min-width: 1800px) {
-}

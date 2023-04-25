@@ -12,11 +12,72 @@
 	padding: 0 2em;
 }
 
+.button {
+	display: inline-block;
+	text-align: center;
+	padding: 1em;
+	background-color: #d19648;
+	color: $text-color-on-dark;
+	border-radius: 25px;
+	text-decoration: none;
+	z-index: 1;
+	letter-spacing: 1px;
+	transition: background-color 0.3s, color 0.3s;
+
+	&:hover {
+		background-color: #c77f22;
+	}
+
+	&--white {
+		background-color: #fff;
+		color: #d19648;
+	}
+
+	&--white:hover {
+		color: #fff;
+		background-color: #292929;
+	}
+}
+//tytuły
+//2.6
+//3.2
+
+
+//text
+//1.6
+
+//przycski
+//1.6
+
+.title{
+	display: inline-block;
+	position: relative;
+	margin-bottom: 2em;
+	padding-left: 1em;
+	padding-right: 1em;
+	text-align: center;
+	font-weight: 400;
+	letter-spacing: 2px !important;
+	font-size: 2.6rem !important;
+
+	span {
+		color: $main-color;
+	}
+}
+
+
 .shape-bgc {
 	display: none;
 }
 
 @media (min-width: 992px) {
+	
+	.title{
+		font-size: 3.5rem !important;
+	}
+
+
+
 	.shape-bgc {
 		display: flex;
 		position: absolute;
@@ -25,9 +86,10 @@
 		&-1 {
 			left: 0;
 			top: 120%;
-			
+
 			&--men {
-				top: 160%;			}
+				top: 160%;
+			}
 		}
 		&-2 {
 			right: 0;
@@ -86,3 +148,4 @@
 		}
 	}
 }
+

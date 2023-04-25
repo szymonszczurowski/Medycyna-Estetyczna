@@ -19,7 +19,9 @@ body {
 	background-color: white;
 	overflow-x: hidden;
 	scroll-behavior: smooth;
+	max-width: 2000px;
 }
+
 @keyframes fadeIn {
 	from {
 		opacity: 0;
@@ -238,6 +240,7 @@ body {
 		display: inline-block;
 		position: relative;
 		text-align: center;
+		font-size: 2.8rem;
 		padding-bottom: 0.5em;
 		font-weight: 400;
 		letter-spacing: 2px;
@@ -307,31 +310,16 @@ body {
 		}
 
 		&__btn {
-			display: block;
-			padding: 10px;
+			width: 80%;
 			margin-bottom: 1em;
-			background-color: $main-color;
-			color: $text-color-on-dark;
-			text-align: center;
-			text-decoration: none;
-			border-radius: 15px;
-			transition: background-color 0.3s;
 
-			&:hover {
-				background-color: $main-color-hover;
-			}
 		}
 	}
 
 	.expertise {
 		&__heading {
-			display: inline-block;
-			position: relative;
-			text-align: center;
-			padding-bottom: 3em;
-			font-size: 2.2rem;
-			font-weight: 400;
-			letter-spacing: 2px;
+			font-weight: 500;
+			margin-bottom: 3em;
 		}
 
 		&__boxes-box {
@@ -344,7 +332,7 @@ body {
 
 		&__title {
 			margin: 1em 0;
-			font-size: 2rem;
+			font-size: 2.2rem;
 			color: $main-color-light;
 		}
 
@@ -354,20 +342,11 @@ body {
 		}
 
 		&__btn {
-			display: inline-block;
 			margin-top: 2em;
 			width: 100%;
 			max-width: 360px;
-			padding: 0.8em;
-			background-color: $main-color;
-			color: white;
-			text-decoration: none;
-			border-radius: 30px;
-			transition: background-color 0.3s;
+			padding: 1em;
 
-			&:hover {
-				background-color: $main-color-hover;
-			}
 		}
 	}
 
@@ -429,6 +408,9 @@ body {
 		&__info-title {
 			font-weight: 700;
 		}
+		&__info-text {
+			font-size: 1.4rem;
+		}
 
 		.form {
 			padding: 2em;
@@ -451,22 +433,12 @@ body {
 			}
 
 			&__btn {
-				display: inline-block;
 				padding: 1em;
 				margin-top: 1em;
 				width: 100%;
-				text-align: center;
-				color: white;
-				font-size: 1.6rem;
-				background-color: $main-color;
-				border-radius: 25px;
 				border: none;
 				cursor: pointer;
-				transition: background-color 0.3s;
 
-				&:hover {
-					background-color: $main-color-hover;
-				}
 			}
 
 			&__group-input,
@@ -561,6 +533,7 @@ body {
 		width: 80%;
 		border-radius: 5px;
 		text-align: center;
+		font-size: 1.4rem;
 
 		i {
 			margin-right: 0.5em;
@@ -568,8 +541,10 @@ body {
 	}
 
 	&__box-number {
+		font-size: 1.4rem;
 		i {
 			margin-right: 0.5em;
+			
 		}
 	}
 
@@ -625,3 +600,8 @@ body {
 @import './utilities/large';
 
 @import './components/checkbox';
+
+
+@media (min-width: 992px) {
+
+}
