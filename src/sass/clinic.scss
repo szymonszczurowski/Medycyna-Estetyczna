@@ -37,6 +37,9 @@
 	}
 
 	.team {
+		.title {
+			border-bottom: 2px solid $main-color;
+		}
 		&__title-box {
 			display: inline-block;
 			position: relative;
@@ -46,6 +49,8 @@
 
 			font-weight: 300;
 			letter-spacing: 2px;
+
+			border-bottom: 1px solid $main-color;
 		}
 
 		&__boxes {
@@ -85,16 +90,15 @@
 			padding: 1em 0.5em;
 		}
 
-        &__employees{
-            margin-top: 4em;
-            margin-bottom: 4em;
-        }
+		&__employees {
+			margin-top: 4em;
+			margin-bottom: 4em;
+		}
 		&__employees-employee {
 			margin-top: 4em;
 		}
 
 		&__employees-img img {
-    
 			width: 100%;
 		}
 
@@ -108,6 +112,15 @@
 			color: $main-color;
 		}
 	}
+
+	.location {
+		text-align: center;
+		padding: 4em 0;
+		z-index: 1;
+		.title {
+			border-bottom: 2px solid $main-color;
+		}
+	}
 }
 
 @media (min-width: 768px) {
@@ -118,6 +131,7 @@
 			justify-content: center;
 			flex-direction: column;
 			margin-top: 8em;
+			background-color: rgba(247, 222, 190, 0.047);
 
 			&__title {
 				display: none;
