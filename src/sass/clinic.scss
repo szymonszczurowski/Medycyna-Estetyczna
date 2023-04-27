@@ -1,1 +1,58 @@
 @use './components/colors' as *;
+
+.main {
+	.about-us {
+		&__box-title {
+            position: relative;
+            margin: 0;
+        
+		}
+
+        hr{
+            display: inline-block;
+            margin: 2em 0;
+            width: 50%;
+            text-align: center;
+            height: 3px;
+            background-color: $main-color;
+        }
+		&__box-text {
+          
+			color: $text-color-info;
+		}
+
+		&__description {
+			margin-top: 3em;
+			padding: 0 2em;
+			text-align: left;
+		}
+
+		&__description-text {
+			margin-bottom: 1em;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.main {
+		.about-us {
+			display: flex;
+
+			&__box {
+				width: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-direction: column;
+			}
+
+			&__description {
+				width: 50%;
+			}
+
+			&__description-text {
+				font-size: 1.6rem;
+			}
+		}
+	}
+}
