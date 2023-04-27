@@ -271,7 +271,7 @@
 				background-color: #d196480c;
 			}
 			&__img {
-				min-width: 50%;
+				width: 50%;
 
 				img {
 					height: 515px;
@@ -283,6 +283,7 @@
 				}
 			}
 			&__box {
+				width: 50%;
 				&--left {
 					order: 1;
 				}
