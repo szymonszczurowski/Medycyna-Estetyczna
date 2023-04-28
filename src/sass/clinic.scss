@@ -1,220 +1,211 @@
-@use './components/colors' as *;
+@use "./components/colors" as *;
 
 .main {
-	.about-us {
-		&__box {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			flex-direction: column;
-		}
-		&__box-title {
-			position: relative;
-			margin: 0;
-		}
+  .about-us {
+    &__box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    &__box-title {
+      position: relative;
+      margin: 0;
+    }
 
-		hr {
-			display: inline-block;
-			margin: 2em 0;
-			width: 200px;
-			text-align: center;
-			height: 3px;
-			background-color: $main-color;
-		}
-		&__box-text {
-			color: $text-color-info;
-		}
+    hr {
+      display: inline-block;
+      margin: 2em 0;
+      width: 200px;
+      text-align: center;
+      height: 3px;
+      background-color: $main-color;
+    }
+    &__box-text {
+      color: $text-color-info;
+    }
 
-		&__description {
-			margin-top: 3em;
-			padding: 0 2em;
-			text-align: left;
-		}
+    &__description {
+      margin-top: 3em;
+      padding: 0 2em;
+      text-align: left;
+    }
 
-		&__description-text {
-			margin-bottom: 1em;
-		}
-	}
+    &__description-text {
+      margin-bottom: 1em;
+    }
+  }
 
-	.team {
-		.title {
-			border-bottom: 2px solid $main-color;
-		}
-		&__title-box {
-			display: inline-block;
-			position: relative;
-			text-align: center;
-			padding-top: 0.5em;
-			font-size: 2.6rem;
+  .team {
+    .title {
+      border-bottom: 2px solid $main-color;
+    }
+    &__title-box {
+      display: inline-block;
+      position: relative;
+      text-align: center;
+      padding-top: 0.5em;
+      font-size: 2.6rem;
 
-			font-weight: 300;
-			letter-spacing: 2px;
+      font-weight: 300;
+      letter-spacing: 2px;
 
-			border-bottom: 1px solid $main-color;
-		}
+      border-bottom: 1px solid $main-color;
+    }
 
-		&__boxes {
-			margin-bottom: 4em;
-		}
+    &__boxes {
+      margin-bottom: 4em;
+    }
 
-		&__img {
-			padding: 0.5em;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			height: 100%;
-			img {
-				border-style: groove;
-				max-width: 100%;
-				max-height: 100%;
-				width: auto;
-				height: auto;
-				object-fit: cover;
-			}
-		}
+    &__img {
+      padding: 0.5em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      img {
+        border-style: groove;
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+        object-fit: cover;
+      }
+    }
 
-		&__text {
-			text-align: left;
-			margin: 1em 0;
-			color: $text-color-on-light;
-			font-weight: 300;
+    &__text {
+      text-align: left;
+      margin: 1em 0;
+      color: $text-color-on-light;
+      font-weight: 300;
 
-			&--main {
-				color: $main-color;
-			}
-		}
+      &--main {
+        color: $main-color;
+      }
+    }
 
-		&__btn {
-			width: 60%;
-			margin-top: 2em;
-			padding: 1em 0.5em;
-		}
+    &__btn {
+      width: 60%;
+      margin-top: 2em;
+      padding: 1em 0.5em;
+    }
 
-		&__employees {
-			margin-top: 4em;
-			margin-bottom: 4em;
-		}
-		&__employees-employee {
-			margin-top: 4em;
-		}
+    &__employees {
+      margin-top: 4em;
+      margin-bottom: 4em;
+    }
+    &__employees-employee {
+      margin-top: 4em;
+    }
 
-		&__employees-img img {
-			width: 100%;
-		}
+    &__employees-img img {
+      width: 100%;
+    }
 
-		&__employees-title {
-			margin: 0.5em 0;
-			font-weight: 400;
-		}
+    &__employees-title {
+      margin: 0.5em 0;
+      font-weight: 400;
+    }
 
-		&__employees-text {
-			margin: 0.5em 0;
-			color: $main-color;
-		}
-	}
-
-	.location {
-		text-align: center;
-		padding: 4em 0;
-		z-index: 1;
-		.title {
-			border-bottom: 2px solid $main-color;
-		}
-	}
+    &__employees-text {
+      margin: 0.5em 0;
+      color: $main-color;
+    }
+  }
 }
 
 @media (min-width: 768px) {
-	.main {
-		.team {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			flex-direction: column;
-			margin-top: 8em;
-			background-color: rgba(247, 222, 190, 0.047);
+  .main {
+    .team {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin-top: 8em;
+      background-color: rgba(247, 222, 190, 0.047);
 
-			&__title {
-				display: none;
+      &__title {
+        display: none;
 
-				&--box {
-					display: block;
-				}
-			}
+        &--box {
+          display: block;
+        }
+      }
 
-			&__boxes {
-				margin: 0;
-				display: flex;
-				align-items: center;
-				justify-content: center;
-			}
-			&__img {
-				width: 50%;
+      &__boxes {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      &__img {
+        width: 50%;
 
-				img {
-					height: 515px;
-					width: 100%;
-				}
+        img {
+          height: 515px;
+          width: 100%;
+        }
 
-				&--right {
-					order: 2;
-				}
-			}
-			&__box {
-				width: 50%;
-				padding: 0em 1em;
-				&--left {
-					order: 1;
-				}
-			}
-			&__text {
-				padding: 0 1em;
-			}
+        &--right {
+          order: 2;
+        }
+      }
+      &__box {
+        width: 50%;
+        padding: 0em 1em;
+        &--left {
+          order: 1;
+        }
+      }
+      &__text {
+        padding: 0 1em;
+      }
 
-			&__employees {
-				display: flex;
-			}
+      &__employees {
+        display: flex;
+      }
 
-			&__employees-employee {
-				margin: 0em 0.5em;
-			}
+      &__employees-employee {
+        margin: 0em 0.5em;
+      }
 
-			&__employees-img img {
-				height: 200px;
-			}
-		}
-	}
+      &__employees-img img {
+        height: 200px;
+      }
+    }
+  }
 }
 
 @media (min-width: 992px) {
-	.main {
-		.about-us {
-			display: flex;
+  .main {
+    .about-us {
+      display: flex;
 
-			&__box {
-				width: 50%;
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				flex-direction: column;
-			}
+      &__box {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
 
-			&__description {
-				width: 50%;
-			}
+      &__description {
+        width: 50%;
+      }
 
-			&__description-text {
-				font-size: 1.6rem;
-			}
-		}
-	}
+      &__description-text {
+        font-size: 1.6rem;
+      }
+    }
+  }
 }
 
 @media (min-width: 1200px) {
-	.main {
-		.team {
-			&__title {
-				font-size: 3.5rem;
-			}
-		}
-	}
+  .main {
+    .team {
+      &__title {
+        font-size: 3.5rem;
+      }
+    }
+  }
 }

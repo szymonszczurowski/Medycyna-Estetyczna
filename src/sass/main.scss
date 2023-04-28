@@ -20,6 +20,9 @@ body {
 	overflow-x: hidden;
 	scroll-behavior: smooth;
 	max-width: 2000px;
+
+
+
 }
 
 @keyframes fadeIn {
@@ -436,10 +439,14 @@ body {
 				font-weight: 500;
 				letter-spacing: 2px;
 				color: $text-color-on-light;
+
+				span{
+					color: $main-color;
+				}
 			}
 
 			&__btn {
-				padding: 1em;
+				padding: 1em 0;
 				margin-top: 1em;
 				width: 100%;
 				border: none;
@@ -475,6 +482,63 @@ body {
 			}
 		}
 	}
+
+	.opinions {
+		// background: linear-gradient(to bottom right, #ffeace80 70%, #ffffff 50%);
+		text-align: center;
+
+		&__boxes {
+			position: relative;
+			height: 100%;
+			padding: 0;
+			margin: 0;
+			height: 500px;
+		}
+
+		&__box {
+			position: relative;
+			margin: 3em 2em 8em 2em;
+			padding: 2em;
+			height: 100%;
+			background-color: white;
+			border-radius: 5px;
+			box-shadow: 3px 3px 10px #2e2e2e2e;
+			transition: transform 0.3s;
+
+			&:hover {
+				transform: scale(0.95);
+			}
+
+			&__img {
+				position: absolute;
+				top: -40px;
+				left: 30px;
+				img {
+					width: 80px;
+					height: 80px;
+					border-radius: 50%;
+					object-fit: cover;
+				}
+			}
+
+			&__icon {
+				text-align: right;
+
+				i {
+					font-size: 2rem;
+					color: $main-color;
+				}
+			}
+
+			&__text {
+				margin-top: 2em;
+			}
+
+			&__name {
+				margin-top: 0.5em;
+			}
+		}
+	}
 }
 
 .footer {
@@ -486,6 +550,7 @@ body {
 	background-color: rgb(41, 41, 41);
 	font-size: 1.4rem;
 	color: $text-color-on-dark;
+	
 
 	&__box {
 		display: flex;

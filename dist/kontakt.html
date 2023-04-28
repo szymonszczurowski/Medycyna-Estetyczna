@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zabiegi estetyczne w Gdańsku - LOOKreacja</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
         <script src="https://kit.fontawesome.com/f66f15b613.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +14,7 @@
     <link href="./css/components/hamburger.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.min.css">
     
-    <link rel="stylesheet" href="./css/clinic.min.css">
+    <link rel="stylesheet" href="./css/contact.min.css">
   </head>
   <body>
     <section class="info">
@@ -236,87 +237,144 @@
 </nav>
     <header class="header">
       <div class="header__shadow"></div>
-      <h1 class="header__heading">Nasza Klinika Estetyczna</h1>
-      <p class="header__text">Dowiedz się o nas więcej</p>
+      <h1 class="header__heading">Kontakt</h1>
+      <p class="header__text">Masz jakieś pytania? Pisz śmiało!</p>
       <div class="header__img header__img--header-clinic"></div>
     </header>
     <div class="header__nav">
       <p class="header__nav-paragraph">
-        <a href="./index.html" class="header__nav-link">Home</a> / <a href="./klinika.html" class="header__nav-link">Klinika</a>
+        <a href="./index.html" class="header__nav-link">Home</a> / <a href="./kontakt.html" class="header__nav-link">Kontakt</a>
       </p>
     </div>
     <main class="main">
-      <div class="wrapper">
-        <section class="about-us section">
-          <div class="about-us__box">
-            <h3 class="title about-us__box-title">Możemy <span>zatrzymać czas</span>
-            </h3>
-            <hr>
-            <p class="about-us__box-text">Nie dosłowenie, ale skutki.</p>
-            <p class="about-us__box-text">Wybróbuj nasze zabiegi, a zrozumiesz.</p>
-          </div>
-          <div class="about-us__description">
-            <p class="about-us__description-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic iure delectus, eum incidunt sequi dicta, sint voluptate obcaecati aut porro nesciunt dolore, deserunt qui nulla magnam voluptatibus magni quaerat vero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-            <p class="about-us__description-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse natus quod explicabo iure atque mollitia exercitationem cumque iusto ipsa consequatur!</p>
-            <p class="about-us__description-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis culpa quas amet exercitationem distinctio eligendi rem vitae quis ipsam ut repudiandae blanditiis, aliquid mollitia consequuntur!</p>
-          </div>
-        </section>
+      <section class="contact ">
+        <div class="contact__bgimg"></div>
+        <div class="contact__boxes">
+    <form action="" class="form" data-aos="fade-right">
+      <h3 class="form__heading">Umów się <span>na wizytę</span></h3>
+      <div class="form__group">
+        <label for="name" class="form__group-title">Imię i Nazwisko:</label>
+        <input type="text" id="name" class="form__group-input">
       </div>
-      <section class="team section">
+      <div class="form__group form__group--left">
+        <label for="phone" class="form__group-title">Telefon:</label>
+        <input type="number" form="phone" class="form__group-input">
+      </div>
+      <div class="form__group  form__group--right">
+        <label for="email" class="form__group-title">E-mail:</label>
+        <input type="email" id="email" class="form__group-input" required>
+      </div>
+      <div class="form__group">
+        <label for="story" class="form__group-title">Wiadomość:</label>
+        <textarea id="story" class="form__group-textarea"></textarea>
+      </div>
+      <div class="form__group form__group--checkbox">
+        <div class="form__group-checkbox">
+          <input type="checkbox" id="privacy-police" />
+          <label for="privacy-police" class="toggle">
+            <span></span>
+          </label>
+        </div>
+        <label for="privacy-police" class="form__group-title">Akceptuję Politykę Prywatności</label>
+      </div>
+      <div class="form__group form__group--checkbox">
+        <div class="form__group-checkbox">
+          <input type="checkbox" id="newsletter" required>
+          <label for="newsletter" class="toggle">
+            <span></span>
+          </label>
+        </div>
+        <label for="newsletter" class="form__group-title">Subskrypcja newslettera</label>
+      </div>
+      <input type="submit" value="Wyślij" class="button form__btn">
+    </form>
+    <div class="contact__info" data-aos="fade-left">
+      <img src="./img/img-contact.webp" alt="Zdjęcie przedstawiające 8 osobową grupę lekarzy ubranych w niebieskie i białe stroje" class="contact__info-img">
+      <p class="contact__info-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, ab facilis similique dolorem.</p>
+      <div class="contact__info-box">
+        <i class="fa-solid fa-location-dot contact__info-icon"></i>
+        <div class="contact__info-place">
+          <h4 class="contact__info-title">80-844 Gdańsk</h4>
+          <p class="contact__info-text">ul. Grunwaldzka 21/37</p>
+        </div>
+      </div>
+      <div class="contact__info-box">
+        <i class="fa-solid fa-phone info__icon contact__info-icon"></i>
+        <div class="contact__info-place">
+          <h4 class="contact__info-title">+48 123 456 789</h4>
+          <p class="contact__info-text"> Od pon do pt od 8:00 do 18:00</p>
+        </div>
+      </div>
+      <div class="contact__info-box">
+        <i class="fa-regular fa-envelope-open contact__info-icon"></i>
+        <div class="contact__info-place">
+          <h4 class="contact__info-title">lookreacja@gmail.com</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+      </section>
+      <section class="opinions section">
+        <h2 class="title" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">Opinie</h2>
         <div class="wrapper">
-          <h2 class="title" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">Nasz <span>zespół</span>
-          </h2>
-          <div class="team__boxes">
-            <div class="team__img team__img--right">
-              <img src="./img/page_clinic/doctor-1.webp" alt="Zdjęcie przestawijące uśmiechniętego doktora w okularach z lekkkim zarostem. Ubrany jest w fartuch lekarski.">
+          <div class="opinions__boxes" data-aos="zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine">
+            <div class="opinions__box">
+              <div class="opinions__box__img">
+                <img src="./img/opinions/opinions-1.jpg" alt="">
+              </div>
+              <p class="opinions__box__icon">
+                <i class="fa-solid fa-quote-right"></i>
+              </p>
+              <p class="opinions__box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, neque perferendis pariatur provident, aperiam nobis hic quia aliquam corporis obcaecati dolore similique vero ipsa voluptatem aspernatur eum nisi. Repellendus, soluta.</p>
+              <p class="opinions__box__name">
+                <strong>Kasia Kowalska</strong>
+              </p>
             </div>
-            <div class="team__box team__box--left">
-              <h3 class="team__title-box" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">Dr Jan Kowalski </h3>
-              <p class="team__text" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus eligendi molestias iusto magnam ex ullam, praesentium, iure libero rem autem ab exercitationem, non porro consectetur officiis at fuga a reiciendis.</p>
-              <p class="team__text" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos nobis, consequuntur quae sit voluptatibus numquam perspiciatis explicabo expedita commodi fuga modi fugit! Vero culpa saepe illum ab magnam! Omnis accusamus velit sit repudiandae suscipit tempora ipsa rerum! Id, soluta minus!</p>
-              <p class="team__text team__text--main" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine"> Lorem ipsum dolor sit amet consectetur adipisicing. </p>
+            <div class="opinions__box">
+              <div class="opinions__box__img">
+                <img src="./img/opinions/opinions-2.jpg" alt="">
+              </div>
+              <p class="opinions__box__icon">
+                <i class="fa-solid fa-quote-right"></i>
+              </p>
+              <p class="opinions__box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, neque perferendis pariatur provident, aperiam nobis hic quia aliquam corporis obcaecati dolore similique vero ipsa voluptatem aspernatur eum nisi. Repellendus, soluta.</p>
+              <p class="opinions__box__name">
+                <strong>Jan Nowak</strong>
+              </p>
+            </div>
+            <div class="opinions__box">
+              <div class="opinions__box__img">
+                <img src="./img/opinions/opinions-3.jpg" alt="">
+              </div>
+              <p class="opinions__box__icon">
+                <i class="fa-solid fa-quote-right"></i>
+              </p>
+              <p class="opinions__box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, neque perferendis pariatur provident, aperiam nobis hic quia aliquam corporis obcaecati dolore similique vero ipsa voluptatem aspernatur eum nisi. Repellendus, soluta.</p>
+              <p class="opinions__box__name">
+                <strong>Maria Kowalska</strong>
+              </p>
+            </div>
+            <div class="opinions__box">
+              <div class="opinions__box__img">
+                <img src="./img/opinions/opinions-4.jpg" alt="">
+              </div>
+              <p class="opinions__box__icon">
+                <i class="fa-solid fa-quote-right"></i>
+              </p>
+              <p class="opinions__box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, neque perferendis pariatur provident, aperiam nobis hic quia aliquam corporis obcaecati dolore similique vero ipsa voluptatem aspernatur eum nisi. Repellendus, soluta.</p>
+              <p class="opinions__box__name">
+                <strong>Milena Wrońska</strong>
+              </p>
             </div>
           </div>
-          <div class="team__boxes">
-            <div class="team__img">
-              <img src="./img/page_clinic/doctor-2.webp" alt="Zdjęcie przestawijące uśmiechniętego lekarkę w okularach. Ubrana jest w fartuch lekarski.">
-            </div>
-            <div class="team__box">
-              <h3 class="team__title-box" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">Dr Maria Kowalenko </h3>
-              <p class="team__text" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus eligendi molestias iusto magnam ex ullam, praesentium, iure libero rem autem ab exercitationem, non porro consectetur officiis at fuga a reiciendis.</p>
-              <p class="team__text" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos nobis, consequuntur quae sit voluptatibus numquam perspiciatis explicabo expedita commodi fuga modi fugit! Vero culpa saepe illum ab magnam! Omnis accusamus velit sit repudiandae suscipit tempora ipsa rerum! Id, soluta minus!</p>
-              <p class="team__text team__text--main" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine"> Lorem ipsum dolor sit amet consectetur adipisicing. </p>
-            </div>
-          </div>
-          <div class="team__employees">
-            <div class="team__employees-employee" data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
-              <div class="team__employees-img">
-                <img src="./img/page_clinic/nurse-1.webp" alt="Zdjęcie przestawijące uśmiechniętą pielęgniarkę w okularach. Ubrana jest w fartuch lekarski.">
-                <h3 class="team__employees-title">Karolina Nowak</h3>
-                <p class="team__employees-text">Asystent Pielęgniarki i Kosmetyczka </p>
-              </div>
-            </div>
-            <div class="team__employees-employee" data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
-              <div class="team__employees-img">
-                <img src="./img/page_clinic/nurse-2.webp" alt="Zdjęcie przestawijące pielęgniarkę ubraną w koszulkę i trzymająco dokumntację medyczną  w okularach. ">
-                <h3 class="team__employees-title">Katarzyna Kamińska</h3>
-                <p class="team__employees-text">Dietetyk i technik laserowy</p>
-              </div>
-            </div>
-            <div class="team__employees-employee" data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
-              <div class="team__employees-img">
-                <img src="./img/page_clinic/nurse-3.webp" alt="Zdjęcie przestawijące uśmiechniętą pielęgniarkę w okularach ubraną w fartuch lekarski i piszącą dokumentację lekarską">
-                <h3 class="team__employees-title">Paulina wiśniewska</h3>
-                <p class="team__employees-text">Asystent Pielęgniarki i Kosmetyczka </p>
-              </div>
-            </div>
-            <div class="team__employees-employee" data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
-              <div class="team__employees-img">
-                <img src="./img/page_clinic/nurse-4.webp" alt="Zdjęcie przestawijące uśmiechniętą pielęgniarkę w okularach ubraną w fartuch lekarski i piszącą dokumentację lekarską">
-                <h3 class="team__employees-title">Wiktoria Wójcik</h3>
-                <p class="team__employees-text">Technik estetyki </p>
-              </div>
-            </div>
+        </div>
+      </section>
+      <section class="location">
+        <h2 class="title" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">Dojazd <span>do Kliniki</span>
+        </h2>
+        <div class="location__boxes">
+          <div class="location__map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9294.113435177711!2d18.600112!3d54.382982!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fd74ea79e3fd01%3A0x3cd7c4eada1b8ed4!2sGaleria%20Ba%C5%82tycka!5e0!3m2!1spl!2spl!4v1682619707791!5m2!1spl!2spl" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
       </section>
@@ -361,15 +419,17 @@
     <img src="./img/shape_bgc/tlo-1.png" class="shape-bgc shape-bgc-1 shape-bgc-1--men">
     <img src="./img/shape_bgc/tlo-2.png" class="shape-bgc shape-bgc-2 shape-bgc-2--men">
     <img src="./img/shape_bgc/tlo-3.png" class="shape-bgc shape-bgc-3 shape-bgc-3--men">
-    <img src="./img/shape_bgc/tlo-4.png" class="shape-bgc shape-bgc-4 shape-bgc-4--men">
     <img src="./img/shape_bgc/tlo-1.png" class="shape-bgc shape-bgc-5 shape-bgc-5--men">
     <img src="./img/shape_bgc/tlo-5.png" alt="" class="shape-bgc shape-bgc-6 shape-bgc-6--men">
     <img src="./img/shape_bgc/tlo-6.png" alt="" class="shape-bgc shape-bgc-8 shape-bgc-8--men">
-    <img src="./img/shape_bgc/tlo-7.png" alt="" class="shape-bgc shape-bgc-9 shape-bgc-9--men">
     <script src="./js/main.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/slick.min.js"></script>
   </body>
 </html>
