@@ -6,6 +6,7 @@ $('.carousel').slick({
 });
 
 
+
 $(document).ready(function () {
     $('.opinions__boxes').slick({
         slidesToShow: 1,

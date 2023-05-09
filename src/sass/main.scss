@@ -42,7 +42,7 @@ body {
 }
 
 .overflow {
-	overflow: hidden;
+	overflow: hidden !important;
 }
 
 .info {
@@ -81,12 +81,13 @@ body {
 		justify-content: center;
 		background-color: $bgc-menu-mobile;
 
+
 		&--active {
 			display: flex;
-			padding: 2em 0;
 			opacity: 1;
 			animation: fadeIn 0.3s ease-in-out forwards;
 			overflow-x: hidden !important;
+			
 		}
 
 		&--unactive {
@@ -98,6 +99,7 @@ body {
 		&__list {
 			list-style: none;
 			padding: 1em 1em 0 1em;
+			max-height: 100%;
 
 			&--unactive {
 				opacity: 0;

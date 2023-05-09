@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
     <link href="./css/components/hamburger.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.min.css">
     
@@ -423,9 +423,12 @@
     <img src="./img/shape_bgc/tlo-5.png" alt="" class="shape-bgc shape-bgc-6 shape-bgc-6--men">
     <img src="./img/shape_bgc/tlo-6.png" alt="" class="shape-bgc shape-bgc-8 shape-bgc-8--men">
     <script src="./js/main.min.js"></script>
+    
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
+      AOS.init({
+        startEvent: 'DOMContentLoaded'
+      });
     </script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

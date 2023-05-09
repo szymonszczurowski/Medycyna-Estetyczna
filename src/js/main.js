@@ -6,7 +6,7 @@ const bodyFace = document.querySelector('#women-face')
 const hamburgerBtn = document.querySelector('.hamburger')
 const navMobile = document.querySelector('.nav__mobile')
 
-const body = document.querySelector('body')
+const body = document.querySelector('html')
 
 
 hamburgerBtn.addEventListener('click', () => {
