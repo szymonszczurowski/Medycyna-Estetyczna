@@ -69,7 +69,7 @@ body {
 	}
 
 	&__mobile {
-		position: absolute;
+		position: fixed;
 		top: 0;
 		left: 0;
 		padding: 2em 0;
@@ -81,13 +81,12 @@ body {
 		justify-content: center;
 		background-color: $bgc-menu-mobile;
 
-
 		&--active {
 			display: flex;
 			opacity: 1;
 			animation: fadeIn 0.3s ease-in-out forwards;
 			overflow-x: hidden !important;
-			
+			position: fixed;
 		}
 
 		&--unactive {
