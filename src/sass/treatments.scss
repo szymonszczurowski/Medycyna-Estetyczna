@@ -1,4 +1,4 @@
-@use '../components/colors' as *;
+@use './components/colors' as *;
 
 .main {
 	.wrapper {
@@ -45,6 +45,10 @@
 			margin-top: 0.5em;
 			text-align: left;
 			color: $text-color-on-light;
+		}
+
+		&__box-text span{
+			font-weight: bold;
 		}
 
 		&__img {
